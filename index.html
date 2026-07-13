@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
 <!--
   THREE Product Mastery — Light Warriors Academy
@@ -1070,7 +1070,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
 
   /* ---------- state ---------- */
   var state = {
-    lang: lsGet(LS.LANG, "zh"),
+    lang: lsGet(LS.LANG, "en"),
     route: {screen:"home"}, // {screen:'home'} | {screen:'module', id, tab:'study'|'flash'|'quiz'} | {screen:'mock'}
     settingsOpen: false,
     modules: (window.THREE_MODULES || []).slice(),
@@ -1116,6 +1116,9 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
       retry:"重新测验",
       settings:"设置",
       exportProgress:"导出进度",
+      shareResults:"分享我的成绩",
+      shareIntro:"我的 THREE 产品精通学习进度：",
+      shareCopied:"成绩已复制，可粘贴分享",
       importProgress:"导入进度",
       resetProgress:"重置全部进度",
       close:"关闭",
@@ -1170,6 +1173,9 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
       retry:"Retry Quiz",
       settings:"Settings",
       exportProgress:"Export Progress",
+      shareResults:"Share My Results",
+      shareIntro:"My THREE Product Mastery progress:",
+      shareCopied:"Results copied — paste to share",
       importProgress:"Import Progress",
       resetProgress:"Reset All Progress",
       close:"Close",
@@ -1798,7 +1804,11 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
     sheet.appendChild(el("h3", {}, ["⚙️ " + t("settings")]));
 
     sheet.appendChild(el("div", {class:"modal-row"}, [
-      el("button", {class:"modal-btn primary", onclick:exportProgress}, ["⬇ " + t("exportProgress")])
+      el("button", {class:"modal-btn primary", onclick:shareResults}, ["📤 " + t("shareResults")])
+    ]));
+
+    sheet.appendChild(el("div", {class:"modal-row"}, [
+      el("button", {class:"modal-btn", onclick:exportProgress}, ["⬇ " + t("exportProgress")])
     ]));
 
     var fileInput = el("input", {type:"file", accept:"application/json", onchange:function(e){
@@ -1837,6 +1847,26 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
   function closeModal(){
     var backdrop = document.querySelector(".modal-backdrop");
     if(backdrop) backdrop.remove();
+  }
+
+  function shareResults(){
+    var pct = overallProgressPct();
+    var passed = state.modules.filter(function(m){ return quizProgress[m.id] && quizProgress[m.id].passed; }).length;
+    var bestMock = null;
+    mockHistory.forEach(function(h){ if(!bestMock || h.score > bestMock.score) bestMock = h; });
+    var lines = [];
+    lines.push(t("shareIntro"));
+    lines.push(t("overallProgress") + ": " + pct + "%");
+    lines.push(t("modulesPassed") + ": " + passed + "/" + state.modules.length);
+    if(bestMock){ lines.push(t("startMock").replace(/[🏆\s]*$/,"") + ": " + bestMock.score + "/" + bestMock.total); }
+    lines.push("— Light Warriors Academy");
+    var text = lines.join("\n");
+    try{
+      if(navigator.share){ navigator.share({text:text}).catch(function(){}); }
+      else if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){ showToast(t("shareCopied")); }).catch(function(){ showToast(text); });
+      } else { showToast(text); }
+    }catch(e){ showToast(text); }
   }
 
   function exportProgress(){
@@ -1909,7 +1939,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
   function renderFooter(){
     return el("div", {class:"footer"}, [
       el("div", {class:"tagline"}, ["Soul + System = Success"]),
-      el("div", {class:"creed"}, ["Build Businesses · Build People · Build Leaders · Build Legacy · v1.0.0"])
+      el("div", {class:"creed"}, ["Build Businesses · Build People · Build Leaders · Build Legacy · v1.1.0"])
     ]);
   }
 
@@ -1923,7 +1953,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
 })();
 </script>
 <script>
-window.TPM_VERSION='1.0.0';
+window.TPM_VERSION='1.1.0';
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){});});}
 </script>
 </body>
