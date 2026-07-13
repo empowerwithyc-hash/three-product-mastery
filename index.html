@@ -929,6 +929,7 @@ window.THREE_MODULES = [
     padding:14px;font-weight:700;font-size:14.5px;cursor:pointer;margin:6px 0 16px;min-height:48px;
   }
   .quiz-submit:disabled{opacity:0.45;cursor:not-allowed;}
+  .answered-hint{text-align:center;font-family:var(--font-ui);font-size:12px;color:var(--ivory-dim);margin-top:2px;margin-bottom:-4px;}
   .quiz-score{
     text-align:center;padding:20px 16px;background:var(--card);border:1px solid var(--gold-soft);border-radius:var(--radius);margin-bottom:14px;
   }
@@ -1110,6 +1111,8 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
       next:"下一个",
       tapToFlip:"点击翻面",
       submit:"提交答案",
+      answerAllFirst:"请先回答所有题目",
+      answered:"已作答",
       yourScore:"你的成绩",
       pass:"已通过",
       fail:"未通过",
@@ -1167,6 +1170,8 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
       next:"Next",
       tapToFlip:"Tap to flip",
       submit:"Submit",
+      answerAllFirst:"Please answer all questions first",
+      answered:"answered",
       yourScore:"Your Score",
       pass:"Passed",
       fail:"Not Passed",
@@ -1619,9 +1624,19 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
       wrap.appendChild(renderQuizQuestion(q, i, sess, false));
     });
 
-    var allAnswered = sess.answers.every(function(a){ return a !== null; });
-    wrap.appendChild(el("button", {class:"quiz-submit", disabled: !allAnswered, onclick:function(){
-      if(!allAnswered) return;
+    var answeredCount = sess.answers.filter(function(a){ return a !== null; }).length;
+    var allAnswered = answeredCount === questions.length;
+    if(!allAnswered){
+      wrap.appendChild(el("div", {class:"answered-hint"}, [answeredCount + " / " + questions.length + " " + t("answered")]));
+    }
+    wrap.appendChild(el("button", {class:"quiz-submit", onclick:function(){
+      if(!allAnswered){
+        showToast(t("answerAllFirst"));
+        var firstUn = sess.answers.indexOf(null);
+        var qs = document.querySelectorAll(".quiz-q");
+        if(firstUn >= 0 && qs[firstUn]) qs[firstUn].scrollIntoView({behavior:"smooth", block:"center"});
+        return;
+      }
       sess.submitted = true;
       var correctCount = 0;
       questions.forEach(function(q, i){ if(sess.answers[i] === q.answer) correctCount++; });
@@ -1768,9 +1783,19 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
         wrap.appendChild(renderQuizQuestion(item.q, i, mock, false));
       });
 
-      var allAnswered = mock.answers.every(function(a){ return a!==null; });
-      wrap.appendChild(el("button", {class:"quiz-submit", disabled: !allAnswered, onclick:function(){
-        if(!allAnswered) return;
+      var answeredCount = mock.answers.filter(function(a){ return a!==null; }).length;
+      var allAnswered = answeredCount === mock.questions.length;
+      if(!allAnswered){
+        wrap.appendChild(el("div", {class:"answered-hint"}, [answeredCount + " / " + mock.questions.length + " " + t("answered")]));
+      }
+      wrap.appendChild(el("button", {class:"quiz-submit", onclick:function(){
+        if(!allAnswered){
+          showToast(t("answerAllFirst"));
+          var firstUn = mock.answers.indexOf(null);
+          var qs = document.querySelectorAll(".quiz-q");
+          if(firstUn >= 0 && qs[firstUn]) qs[firstUn].scrollIntoView({behavior:"smooth", block:"center"});
+          return;
+        }
         mock.submitted = true;
         mock.elapsedSec = Math.floor((Date.now()-mock.startedAt)/1000);
         stopMockTimer();
@@ -1939,7 +1964,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
   function renderFooter(){
     return el("div", {class:"footer"}, [
       el("div", {class:"tagline"}, ["Soul + System = Success"]),
-      el("div", {class:"creed"}, ["Build Businesses · Build People · Build Leaders · Build Legacy · v1.1.0"])
+      el("div", {class:"creed"}, ["Build Businesses · Build People · Build Leaders · Build Legacy · v1.1.1"])
     ]);
   }
 
@@ -1953,7 +1978,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
 })();
 </script>
 <script>
-window.TPM_VERSION='1.1.0';
+window.TPM_VERSION='1.1.1';
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){});});}
 </script>
 </body>
