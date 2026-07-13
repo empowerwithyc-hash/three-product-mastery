@@ -1,0 +1,16 @@
+{
+  "name": "THREE Product Mastery — Light Warriors Academy",
+  "short_name": "THREE Mastery",
+  "description": "Product-training study app for Light Warriors: 16 modules, flashcards, quizzes, mock exam. 中文/English.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1C1917",
+  "theme_color": "#1C1917",
+  "lang": "zh",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

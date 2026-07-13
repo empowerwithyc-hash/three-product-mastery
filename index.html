@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<!--
+  THREE Product Mastery — Light Warriors Academy
+  Single-file offline study PWA-style app.
+  Version: v1
+  Date: 2026-07-12
+  Data grounded in THREE KB notebook 6c88d7fd; internal wellness training; approved verbs only.
+  Note: this file is a SHELL. Real module content is injected at the DATA_INJECTION_POINT
+  marker below (window.THREE_MODULES, 16 module objects). Do not hardcode module content here.
+-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#1C1917">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="THREE Mastery">
+<title>THREE Product Mastery — Light Warriors Academy</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231C1917'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23C8A14B' font-family='serif'%3E3%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231C1917'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23C8A14B' font-family='serif'%3E3%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Montserrat:wght@400;500;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+<script>
+window.THREE_MODULES = [
+{
+  id: 1,
+  section: "foundation",
+  productKey: null,
+  title: { en: "Company & Brand", zh: "公司与品牌" },
+  hook: { en: "Science meets freedom — this is the story of THREE.", zh: "科学与自由的相遇——这就是 THREE 的故事。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>THREE was launched in early 2023 by Founder & CEO Daniel Picou, who brought a background in digital marketing and prior experience co-founding and leading a direct-selling company operating in 12 international markets. His goal was to merge science-based products with a platform that supports personal and professional growth. THREE positions itself as a "global leader in bioavailable wellness products," headquartered in Lehi, UT USA.</p>
+<h4>Key facts</h4>
+<ul>
+<li>Founder & CEO: Daniel Picou; launched THREE early 2023; digital-marketing background; previously co-founded/led a direct-selling company across 12 markets.</li>
+<li>Mission: inspire entrepreneurs toward meaningful, lasting success; help people live more "significant lives." Vision phrase: "Experience Life at THREE: Wellness Meets Freedom."</li>
+<li>HQ: 1441 W Innovation Way, Ste. 100, Lehi, UT 84043 USA. Positioning: "Global leader in bioavailable wellness products."</li>
+<li>Three Pillars of Innovation: Exploration (rare phytonutrients; &lt;5% of plant species studied), Curation (hundreds of molecules combined into custom formulations), Absorption (proprietary Cellular Absorption Technologies; 3–9.5× more absorbable than standard organic molecules).</li>
+<li>Credibility: develops own formulas (not white-label); Simple Six + GLP THREE recognized in the Prescriber's Digital Reference (PDR); clinical studies on finished formulas.</li>
+<li>CSO: Dr. Dan Gubler, Ph.D. — PhD Organic Chemistry (Colorado State), BSc Biochemistry (BYU), Caltech-trained phytonutrient chemist; 15+ yrs; 16 patents; 70+ formulations; DSA Visionary Award; Schering-Plough Science and Innovation Award; hosts "Discover with Dr. Dan."</li>
+<li>Model: direct selling / social commerce; Brand Ambassadors. Markets: US, Canada, Hong Kong, Indonesia, Japan, Macau, Malaysia, Philippines, Singapore, Taiwan, Thailand, Vietnam, Australia, New Zealand. July 26, 2025: full operations + offices in Malaysia and Taiwan.</li>
+<li>Four growth areas ("Light Warriors" culture): Wellness, Mindset, Leadership, Freedom. Light Warriors vision arc: Wellness → Leadership → Systems → Freedom → Legacy.</li>
+</ul>
+<h4>Benefits</h4>
+<ul><li>Supports entrepreneurs pursuing meaningful, lasting success.</li><li>Promotes personal and professional growth through a duplicable community system.</li></ul>
+<p>Results vary from person to person.</p>
+<h4>Memorable hook</h4><p>"Wellness Meets Freedom" — science-based products paired with a growth platform, built to duplicate.</p>`,
+    zh: `<h4>这是什么</h4><p>THREE 由创始人兼首席执行官 Daniel Picou 于2023年初创立。他拥有数字营销背景，此前曾共同创立并领导一家在12个国际市场运营的直销公司。他的目标是将以科学为基础的产品与支持个人及职业成长的平台相结合。THREE 定位为"生物可利用性健康产品的全球领导者"，总部位于美国犹他州利海市。</p>
+<h4>关键事实</h4>
+<ul>
+<li>创始人兼CEO：Daniel Picou；2023年初创立；数字营销背景；此前共同创立/领导过一家横跨12个市场的直销公司。</li>
+<li>使命：激励创业者迈向有意义且持久的成功；帮助人们过上更有"意义的生活"。愿景口号："Experience Life at THREE: Wellness Meets Freedom"。</li>
+<li>总部：1441 W Innovation Way, Ste. 100, Lehi, UT 84043 USA。定位："生物可利用性健康产品的全球领导者"。</li>
+<li>三大创新支柱：探索（稀有植物营养素；已研究植物物种不足5%）、精选（数百种分子组合成定制配方）、吸收（专有细胞吸收科技；吸收率比标准有机分子高3–9.5倍）。</li>
+<li>信誉：自主研发配方（非贴牌）；Simple Six 与 GLP THREE 被《处方者数字参考》（PDR）收录；对成品配方进行临床研究。</li>
+<li>首席科学官：Dr. Dan Gubler 博士——科罗拉多州立大学有机化学博士，杨百翰大学生物化学学士，加州理工培训的植物营养素化学家；15年以上经验；16项专利；配制70余款营养品；DSA远见奖；先灵葆雅科学与创新奖。</li>
+<li>模式：直销／社交电商；品牌大使。市场：美国、加拿大、香港、印尼、日本、澳门、马来西亚、菲律宾、新加坡、台湾、泰国、越南、澳大利亚、新西兰。2025年7月26日：马来西亚与台湾全面运营及办公室。</li>
+<li>四大成长领域（"光之勇士"文化）：健康、心态、领导力、自由。愿景路径：健康 → 领导力 → 系统 → 自由 → 传承。</li>
+</ul>
+<h4>益处</h4>
+<ul><li>支持追求有意义且持久成功的创业者。</li><li>通过可复制的社群系统促进个人与职业成长。</li></ul>
+<p>效果因人而异。</p>
+<h4>便于记忆</h4><p>"健康与自由的相遇"——以科学为基础的产品，搭配可复制的成长平台。</p>`
+  },
+  flashcards: [
+    { q: { en: "Who founded THREE and when?", zh: "谁创立THREE，何时？" }, a: { en: "Daniel Picou, Founder & CEO, early 2023.", zh: "Daniel Picou，2023年初。" } },
+    { q: { en: "Picou's background before THREE?", zh: "他创立THREE前的背景？" }, a: { en: "Digital marketing; co-founded/led a direct-selling company in 12 markets.", zh: "数字营销；曾在12个市场共同创立/领导直销公司。" } },
+    { q: { en: "THREE's vision phrase?", zh: "愿景口号？" }, a: { en: "\"Experience Life at THREE: Wellness Meets Freedom.\"", zh: "\"Experience Life at THREE: Wellness Meets Freedom\"。" } },
+    { q: { en: "The Three Pillars of Innovation?", zh: "三大创新支柱？" }, a: { en: "Exploration, Curation, Absorption.", zh: "探索、精选、吸收。" } },
+    { q: { en: "Three credibility markers?", zh: "三项信誉标志？" }, a: { en: "Own formulas (not white-label); Simple Six + GLP THREE in the PDR; clinical studies on finished formulas.", zh: "自主研发配方；Simple Six+GLP THREE 收录于PDR；对成品配方做临床研究。" } },
+    { q: { en: "Four growth areas of the Light Warriors culture?", zh: "光之勇士文化四大成长领域？" }, a: { en: "Wellness, Mindset, Leadership, Freedom.", zh: "健康、心态、领导力、自由。" } }
+  ],
+  quiz: [
+    { q: { en: "When did THREE launch?", zh: "THREE何时成立？" }, options: { en: ["2019","Early 2023","2025","2020"], zh: ["2019","2023年初","2025","2020"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Where is HQ?", zh: "总部在哪？" }, options: { en: ["Lehi, UT","Provo, UT","Salt Lake City","Draper"], zh: ["利海市","普罗沃","盐湖城","德雷珀"] }, answer: 0, rationale: { en: "", zh: "" } },
+    { q: { en: "Which is NOT a Pillar?", zh: "哪项不是支柱？" }, options: { en: ["Exploration","Curation","Absorption","Formulation"], zh: ["探索","精选","吸收","配方研发"] }, answer: 3, rationale: { en: "", zh: "" } },
+    { q: { en: "Share of plant species studied for medicinal molecules?", zh: "已研究用于医药分子的植物比例？" }, options: { en: ["<5%","25%","50%","90%"], zh: ["不足5%","25%","50%","90%"] }, answer: 0, rationale: { en: "", zh: "" } },
+    { q: { en: "Which two markets launched July 26, 2025?", zh: "2025年7月26日启动的两个市场？" }, options: { en: ["US & Canada","Malaysia & Taiwan","Japan & Vietnam","Singapore & Thailand"], zh: ["美加","马来西亚与台湾","日越","新泰"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 2,
+  section: "foundation",
+  productKey: null,
+  title: { en: "The Science", zh: "科学原理" },
+  hook: { en: "\"You aren't what you eat… you are what the body actually absorbs.\"", zh: "\"你不是你吃下去的东西……你是身体真正吸收进去的东西。\"" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>Most nutrients are hydrophilic ("afraid of water") and poorly absorbed — a standard organic control such as curcumin absorbs only ~10%. THREE addresses this with proprietary Cellular Absorption Technologies (liposomal delivery, micelle technology) that give nutrients a "VIP pass" into cells. Measured by the Caco-2 permeability assay, finished formulas are 3–9.5× more absorbable than the control.</p>
+<h4>Key facts</h4>
+<ul>
+<li>Standard control (curcumin) ≈ 10% absorption. Delivery: liposomal + micelle. Method: Caco-2 assay.</li>
+<li>Phytonutrients = medicinal plant components. 600,000+ plant species; &lt;5% studied. Epigenetics = "genetic light switch" (genes ON/OFF for energy, inflammation, antioxidant defense, blood sugar, cognition).</li>
+<li>Absorption study vs control ~10%: Éternel 95%, Purifí 88%, Collagène 73%, Vitalité 44%, Imúne 44%, Revíve 30% → 3–9.5× (Revíve 3×, Éternel 9.5×).</li>
+<li>Epigenetics study: nrf1 Revíve +229% / Vitalité +224%; nfKb Éternel −345%; ppara Revíve +384% / Éternel +380%; sod1 Revíve +185%; glp1 Vitalité +348% / Revíve +293%; bdnf Vitalité +840% / Collagène +570% / Revíve +430%; il6 Éternel −1250%; sirt1 Revíve +164%.</li>
+<li>GLP-1 = 30-amino-acid signaling peptide (appetite/blood sugar); natural half-life ~90 sec–2 min before DPP4 breaks it down.</li>
+<li>Health-crisis stats: 59% overweight/obese; 30% metabolic syndrome; 99% breathe polluted air.</li>
+</ul>
+<p><em>Study figures — verify against official THREE PDFs before public use.</em></p>
+<h4>Benefits (pathways)</h4>
+<ul><li>Supports healthy epigenetic function; promotes cellular-energy pathways; helps maintain a healthy inflammatory response; assists antioxidant defense; helps maintain healthy blood sugar; supports cognitive pathways.</li></ul>
+<p>Results vary from person to person.</p>
+<h4>Mechanism (Dr. Dan)</h4><p>Monopharmacology (one synthetic molecule, binds irreversibly, off-target effects) vs Molecular Curation (natural "super-teams" binding gently across pathways). Food noise = cravings from hormonal imbalance; activating GLP-1 "quiets the noise." Gut-brain: satiety travels gut → vagus nerve → brain. Quorum sensing = how bacteria "chat." Daily Blueprint: no snacking · eat early (high-protein low-sugar breakfast before 10 AM) · hydrate first (16 oz on waking + before meals) · GLP THREE twice daily 30 min before meals · Simple Six daily · be a student.</p>
+<h4>Memorable hook</h4><p>Cruise ship (metabolism turns slowly — give it time) + mountain (90-day climb, everyone starts differently) + janitor's cart / "Taylor Swift" (hide the fragile MBC-267 peptide via Polyphenol Complexation to slip into the cell).</p>`,
+    zh: `<h4>这是什么</h4><p>大多数营养素亲水（"怕水"）、吸收差——标准有机对照物（如姜黄素）吸收率仅约10%。THREE 以专有细胞吸收科技（脂质体递送、胶束技术）为营养素提供进入细胞的"VIP通行证"。以 Caco-2 渗透性检测测量，成品配方吸收率比对照物高3–9.5倍。</p>
+<h4>关键事实</h4>
+<ul>
+<li>对照物（姜黄素）约10%。递送：脂质体+胶束。方法：Caco-2检测。</li>
+<li>植物营养素＝植物药用成分。植物物种超60万，已研究<5%。表观遗传＝"基因光开关"（开关与能量、炎症、抗氧化、血糖、认知相关的基因）。</li>
+<li>吸收研究（对照约10%）：Éternel 95%、Purifí 88%、Collagène 73%、Vitalité 44%、Imúne 44%、Revíve 30% → 3–9.5倍（Revíve 3倍，Éternel 9.5倍）。</li>
+<li>表观遗传研究：nrf1 Revíve +229%/Vitalité +224%；nfKb Éternel −345%；ppara Revíve +384%/Éternel +380%；sod1 Revíve +185%；glp1 Vitalité +348%/Revíve +293%；bdnf Vitalité +840%/Collagène +570%/Revíve +430%；il6 Éternel −1250%；sirt1 Revíve +164%。</li>
+<li>GLP-1＝30氨基酸信号肽（食欲/血糖）；天然半衰期约90秒–2分钟，随后被DPP4分解。</li>
+<li>健康危机数据：59%超重/肥胖；30%代谢综合征；99%呼吸受污染空气。</li>
+</ul>
+<p><em>研究数据——公开使用前请核对THREE官方文件。</em></p>
+<h4>益处（通路）</h4>
+<ul><li>支持健康表观遗传功能；促进细胞能量通路；帮助维持健康炎症反应；辅助抗氧化防御；帮助维持健康血糖；支持认知通路。</li></ul>
+<p>效果因人而异。</p>
+<h4>机制（Dr. Dan）</h4><p>单一药理学（一种合成分子，不可逆结合，脱靶效应）对比分子精选（天然"超级团队"在多通路温和结合）。食物噪音＝激素失衡引发的渴望；激活GLP-1"让噪音安静"。肠脑：饱腹信号 肠道→迷走神经→大脑。群体感应＝细菌"交流"。每日蓝图：不吃零食·早吃（上午10点前高蛋白低糖早餐）·先补水（起床及餐前16盎司）·GLP THREE 每日两次餐前30分钟·每日Simple Six·做学习者。</p>
+<h4>便于记忆</h4><p>邮轮（代谢转向慢——给它时间）＋登山（90天，各自起点不同）＋清洁工推车/"泰勒·斯威夫特"（多酚络合隐藏脆弱的MBC-267肽以潜入细胞）。</p>`
+  },
+  flashcards: [
+    { q: { en: "Control absorption %?", zh: "对照吸收率？" }, a: { en: "~10%.", zh: "约10%。" } },
+    { q: { en: "Method behind the figures?", zh: "数据背后的方法？" }, a: { en: "Caco-2 permeability assay.", zh: "Caco-2渗透性检测。" } },
+    { q: { en: "Two delivery systems?", zh: "两种递送系统？" }, a: { en: "Liposomal delivery + micelle technology.", zh: "脂质体递送＋胶束技术。" } },
+    { q: { en: "Share of plant species studied?", zh: "已研究植物比例？" }, a: { en: "<5% of 600,000+.", zh: "60万余种中不足5%。" } },
+    { q: { en: "Largest gene change and where?", zh: "最大基因变化及产品？" }, a: { en: "bdnf +840% in Vitalité.", zh: "Vitalité中bdnf +840%。" } },
+    { q: { en: "GLP-1 natural half-life?", zh: "GLP-1天然半衰期？" }, a: { en: "~90 sec–2 min (then DPP4).", zh: "约90秒–2分钟（随后DPP4）。" } }
+  ],
+  quiz: [
+    { q: { en: "Highest absorption formula?", zh: "吸收率最高的配方？" }, options: { en: ["Revíve 30%","Vitalité 44%","Éternel 95%","Collagène 73%"], zh: ["Revíve 30%","Vitalité 44%","Éternel 95%","Collagène 73%"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "How much more absorbable vs control?", zh: "比对照高多少倍？" }, options: { en: ["1–2×","3–9.5×","10–15×","20×"], zh: ["1–2","3–9.5","10–15","20"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "\"Food noise\" = ?", zh: "\"食物噪音\"＝？" }, options: { en: ["kitchen sounds","cravings from hormonal imbalance","an enzyme","quorum sensing"], zh: ["厨房声","激素失衡引发的渴望","一种酶","群体感应"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "GLP THREE timing (Blueprint)?", zh: "GLP THREE 使用时机（蓝图）？" }, options: { en: ["once at bedtime","twice daily 30 min before meals","with snacks","training days only"], zh: ["睡前一次","每日两次餐前30分钟","配零食","仅训练日"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Molecular Curation describes?", zh: "分子精选描述？" }, options: { en: ["one synthetic molecule binding irreversibly","natural \"super-teams\" binding gently across pathways","one high-dose vitamin","a drug on one receptor"], zh: ["一种合成分子不可逆结合","天然\"超级团队\"多通路温和结合","单一高剂量维生素","药物结合单一受体"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+}
+,
+{
+  id: 3,
+  section: "product",
+  productKey: "vitalite",
+  title: { en: "Vitalité", zh: "Vitalité" },
+  hook: { en: "Your daily foundation for cellular energy — built from the ground up.", zh: "每日细胞能量的基础——从根基开始建立。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A comprehensive superfood blend + multivitamin complex that forges a nutritional foundation at the cellular level (Ingestible Wellness).</p>
+<h4>Key ingredients</h4><ul><li>naturally derived vitamins & minerals</li><li>72 trace minerals</li><li>amino acids</li><li>Superfood Blend (rich in chlorophyll)</li><li>probiotics (100 million live bacteria)</li><li>Omega-3 Complex softgel</li></ul>
+<h4>Benefits</h4><ul><li>supports a vast portfolio of vital nutrients</li><li>supports heart, brain, and eye health</li><li>supports gut microbiome</li><li>supports cellular energy (ATP)</li></ul><p>Results vary from person to person.</p>
+<h4>Science</h4><p>absorption 44% (4.4× the ~10% control); gene activation BDNF +840%, GLP-1 +348%, NRF1 +224%, PPARA +216%.</p><p><em>Study figures — verify against official THREE PDFs before public use.</em></p>
+<h4>How to use</h4><p>1 softgel + 4 capsules daily, with water, morning, with a meal.</p>
+<h4>Ideal customer</h4><p>anyone wanting a daily cellular-nutrition foundation.</p>
+<h4>Memorable hook</h4><p>"The foundation you pour first — 72 trace minerals plus a genetic-level toolkit for energy, brain, heart, and gut."</p>`,
+    zh: `<h4>这是什么</h4><p>全面的超级食物复合＋复合维生素，在细胞层面打造营养基础（可摄入健康）。</p>
+<h4>关键成分</h4><ul><li>天然维生素与矿物质</li><li>72种微量矿物质</li><li>氨基酸</li><li>超级食物复合（富含叶绿素）</li><li>益生菌（1亿活菌）</li><li>Omega-3复合软胶囊</li></ul>
+<h4>益处</h4><ul><li>支持摄入丰富必需营养素</li><li>支持心脏、大脑与眼睛健康</li><li>支持肠道菌群</li><li>支持细胞能量（ATP）</li></ul><p>效果因人而异。</p>
+<h4>科学</h4><p>吸收率44%（约10%对照的4.4倍）；基因激活 BDNF +840%、GLP-1 +348%、NRF1 +224%、PPARA +216%。</p><p><em>研究数据——公开使用前请核对THREE官方文件。</em></p>
+<h4>使用</h4><p>每日1粒软胶囊＋4粒胶囊，配水，早晨随餐。</p>
+<h4>理想客户</h4><p>想建立每日细胞营养基础的人。</p>
+<h4>便于记忆</h4><p>"先打好的地基——72种微量矿物质＋基因层面支持能量、大脑、心脏与肠道。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Category?", zh: "品类？" }, a: { en: "Ingestible Wellness.", zh: "可摄入健康。" } },
+    { q: { en: "Absorption?", zh: "吸收率？" }, a: { en: "44% (4.4×).", zh: "44%（4.4倍）。" } },
+    { q: { en: "Trace minerals?", zh: "微量矿物质？" }, a: { en: "72.", zh: "72种。" } },
+    { q: { en: "Live bacteria?", zh: "活菌？" }, a: { en: "100 million.", zh: "1亿。" } },
+    { q: { en: "Four activated genes?", zh: "四个激活基因？" }, a: { en: "BDNF +840%, GLP-1 +348%, NRF1 +224%, PPARA +216%.", zh: "BDNF+840、GLP-1+348、NRF1+224、PPARA+216。" } },
+    { q: { en: "Dose?", zh: "用量？" }, a: { en: "1 softgel + 4 caps daily, water, AM, with a meal.", zh: "每日1软胶囊+4胶囊，配水，早晨随餐。" } }
+  ],
+  quiz: [
+    { q: { en: "Absorption?", zh: "吸收率？" }, options: { en: ["10","30","44","95"], zh: ["10","30","44","95"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Trace minerals?", zh: "微量矿物质？" }, options: { en: ["10","44","72","100"], zh: ["10","44","72","100"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Live bacteria?", zh: "活菌？" }, options: { en: ["10M","50M","72M","100M"], zh: ["1000万","5000万","7200万","1亿"] }, answer: 3, rationale: { en: "", zh: "" } },
+    { q: { en: "Highest gene activation?", zh: "激活幅度最大？" }, options: { en: ["PPARA+216","NRF1+224","GLP-1+348","BDNF+840"], zh: ["PPARA+216","NRF1+224","GLP-1+348","BDNF+840"] }, answer: 3, rationale: { en: "", zh: "" } },
+    { q: { en: "Dose?", zh: "用量？" }, options: { en: ["2 softgels","1 softgel+4 caps with meal","1–2 packets","4 softgels post-workout"], zh: ["仅2软胶囊","1软胶囊+4胶囊随餐","1–2包","运动后4软胶囊"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 4,
+  section: "product",
+  productKey: "eternel",
+  title: { en: "Éternel", zh: "Éternel" },
+  hook: { en: "Age-defying defense in a single sachet.", zh: "一包唤醒抗老防御力。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>An antioxidant super-blend for age-defying defenses, formulated to protect cells from premature aging (Ingestible Wellness).</p>
+<h4>Key ingredients</h4><ul><li>Resveratrol (≥200 mg / ~208 mg per serving)</li><li>CoQ10</li><li>Marine Collagen</li><li>blend of 10 superfruits (açai, goji, mangosteen, pomegranate)</li></ul>
+<h4>Benefits</h4><ul><li>supports protection of cells from premature aging</li><li>supports cellular health and longevity</li><li>assists in neutralizing free radicals</li></ul><p>Results vary from person to person.</p>
+<h4>Science</h4><p>absorption 95% (9.5× the ~10% control — highest in the line); epigenetics NFKB −345%, PPARA +380%, IL6 −1250%; BioChroma Analytical Labs confirmed 208 mg resveratrol/serving via a liposomal system; one sachet ≈ resveratrol of 170 glasses of red wine.</p><p><em>Study figures — verify against official THREE PDFs before public use.</em></p>
+<h4>How to use</h4><p>1–2 packets daily, any time, with or without food.</p>
+<h4>Ideal customer</h4><p>anti-aging / antioxidant-protection seekers.</p>
+<h4>Memorable hook</h4><p>"One sachet, 170 glasses of red wine's worth of resveratrol — without the wine."</p>`,
+    zh: `<h4>这是什么</h4><p>抗氧化超级复合，专为对抗衰老而设，帮助保护细胞免受早衰（可摄入健康）。</p>
+<h4>关键成分</h4><ul><li>白藜芦醇（每份≥200毫克/约208毫克）</li><li>辅酶Q10</li><li>海洋胶原蛋白</li><li>10种超级水果（巴西莓、枸杞、山竹、石榴）</li></ul>
+<h4>益处</h4><ul><li>支持保护细胞免受早衰</li><li>支持细胞健康与长寿</li><li>辅助中和自由基</li></ul><p>效果因人而异。</p>
+<h4>科学</h4><p>吸收率95%（约10%对照的9.5倍——全系列最高）；表观遗传 NFKB −345%、PPARA +380%、IL6 −1250%；BioChroma 实验室确认每份208毫克白藜芦醇，经脂质体系统输送；一包≈170杯红酒的白藜芦醇。</p><p><em>研究数据——公开使用前请核对THREE官方文件。</em></p>
+<h4>使用</h4><p>每日1–2包，任意时间，可搭配或不搭配食物。</p>
+<h4>理想客户</h4><p>寻求抗衰老与抗氧化保护的人。</p>
+<h4>便于记忆</h4><p>"一包＝170杯红酒的白藜芦醇——却不含酒精。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Category?", zh: "品类？" }, a: { en: "Ingestible Wellness.", zh: "可摄入健康。" } },
+    { q: { en: "Resveratrol/serving?", zh: "每份白藜芦醇？" }, a: { en: "≥200 mg (~208 mg, BioChroma).", zh: "≥200毫克（约208，BioChroma）。" } },
+    { q: { en: "Absorption?", zh: "吸收率？" }, a: { en: "95% (9.5×, highest).", zh: "95%（9.5倍，最高）。" } },
+    { q: { en: "Delivery?", zh: "递送？" }, a: { en: "Liposomal system.", zh: "脂质体系统。" } },
+    { q: { en: "Superfruits?", zh: "超级水果？" }, a: { en: "10 (açai, goji, mangosteen, pomegranate…).", zh: "10种。" } },
+    { q: { en: "Consumer comparison?", zh: "消费者对比？" }, a: { en: "≈170 glasses of red wine.", zh: "≈170杯红酒。" } }
+  ],
+  quiz: [
+    { q: { en: "Absorption?", zh: "吸收率？" }, options: { en: ["30","44","95","50"], zh: ["30","44","95","50"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Resveratrol confirmed?", zh: "确认白藜芦醇？" }, options: { en: ["100","150","200","208 mg"], zh: ["100","150","200","208毫克"] }, answer: 3, rationale: { en: "", zh: "" } },
+    { q: { en: "Red-wine equivalent?", zh: "红酒当量？" }, options: { en: ["50","100","170","208"], zh: ["50","100","170","208"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Delivery system?", zh: "递送系统？" }, options: { en: ["softgel","liposomal","micelle","standard capsule"], zh: ["软胶囊","脂质体","胶束","普通胶囊"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Which marker decreases?", zh: "哪项指标下降？" }, options: { en: ["PPARA+380","NFKB−345","BDNF+840","SOD1+185"], zh: ["PPARA+380","NFKB−345","BDNF+840","SOD1+185"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 5,
+  section: "product",
+  productKey: "revive",
+  title: { en: "Revíve", zh: "Revíve" },
+  hook: { en: "Renewal for joints that keep you moving.", zh: "让关节持续活动的更新力量。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A renewal and recovery formula to support healthy joints and ease muscle stiffness (Ingestible Wellness).</p>
+<h4>Key ingredients</h4><ul><li>Curcumin</li><li>Boswellia</li><li>Black Cumin Oil</li><li>Quillaja Saponins (micelle technology)</li><li>Grape Seed Extract</li><li>Shiitake Mushroom</li><li>Sea Buckthorn Fruit Oil</li></ul>
+<h4>Benefits</h4><ul><li>supports healthy joints, flexibility, and mobility</li><li>assists in easing stiffness and soreness</li><li>promotes exercise recovery</li></ul><p>Results vary from person to person.</p>
+<h4>Science</h4><p>absorption 30% (3× the ~10% control); Revíve Superoxide Study — inhibited superoxide 35.87% at 150 μg/mL and 3.98% at 50 μg/mL in human epidermal liver cells (THLE-2) in vitro; epigenetics NRF1 +229%, PPARA +384%, SOD1 +185%, BDNF +430%, SIRT1 +164%.</p><p><em>Study figures — verify against official THREE PDFs before public use.</em></p>
+<h4>How to use</h4><p>2 softgels daily for maintenance, or as needed post-exercise; active users may prefer it immediately after a workout.</p>
+<h4>Ideal customer</h4><p>active people wanting joint comfort and recovery.</p>
+<h4>Memorable hook</h4><p>"Your post-workout reset button — renewal for joints and muscles."</p>`,
+    zh: `<h4>这是什么</h4><p>更新与恢复配方，支持健康关节、缓解肌肉僵硬（可摄入健康）。</p>
+<h4>关键成分</h4><ul><li>姜黄素</li><li>乳香</li><li>黑籽油</li><li>皂皮树皂苷（微胶粒技术）</li><li>葡萄籽提取物</li><li>香菇</li><li>沙棘果油</li></ul>
+<h4>益处</h4><ul><li>支持健康关节、灵活度与活动能力</li><li>辅助缓解僵硬与酸痛</li><li>促进运动后恢复</li></ul><p>效果因人而异。</p>
+<h4>科学</h4><p>吸收率30%（约10%对照的3倍）；超氧化物研究——人类肝上皮细胞（THLE-2）体外，150 μg/mL抑制35.87%、50 μg/mL抑制3.98%；表观遗传 NRF1 +229%、PPARA +384%、SOD1 +185%、BDNF +430%、SIRT1 +164%。</p><p><em>研究数据——公开使用前请核对THREE官方文件。</em></p>
+<h4>使用</h4><p>日常维护每日2粒软胶囊，或运动后按需；活跃者可运动后立即服用。</p>
+<h4>理想客户</h4><p>想要关节舒适与恢复的活跃人群。</p>
+<h4>便于记忆</h4><p>"你的运动后重启键——关节与肌肉的更新。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Supports?", zh: "支持？" }, a: { en: "healthy joints + easing stiffness.", zh: "健康关节＋缓解僵硬。" } },
+    { q: { en: "Absorption?", zh: "吸收率？" }, a: { en: "30% (3×).", zh: "30%（3倍）。" } },
+    { q: { en: "Superoxide study?", zh: "超氧化物研究？" }, a: { en: "35.87% @150 μg/mL, 3.98% @50 μg/mL in THLE-2.", zh: "THLE-2中150 μg/mL抑制35.87%、50 μg/mL抑制3.98%。" } },
+    { q: { en: "Three ingredients?", zh: "三种成分？" }, a: { en: "e.g. Curcumin/Boswellia/Black Cumin Oil.", zh: "如姜黄素/乳香/黑籽油。" } },
+    { q: { en: "Quillaja delivery tech?", zh: "皂苷递送技术？" }, a: { en: "micelle.", zh: "微胶粒。" } },
+    { q: { en: "Dose?", zh: "用量？" }, a: { en: "2 softgels daily / as needed post-exercise.", zh: "每日2软胶囊/运动后按需。" } }
+  ],
+  quiz: [
+    { q: { en: "Absorption?", zh: "吸收率？" }, options: { en: ["30","44","95","20"], zh: ["30","44","95","20"] }, answer: 0, rationale: { en: "", zh: "" } },
+    { q: { en: "Inhibition @150 μg/mL?", zh: "150 μg/mL抑制率？" }, options: { en: ["3.98","15","35.87","50%"], zh: ["3.98","15","35.87","50%"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Cell type?", zh: "细胞类型？" }, options: { en: ["dermal fibroblasts","THLE-2 liver cells","gut microbiota","neural"], zh: ["真皮成纤维","THLE-2肝细胞","肠道菌群","神经"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Quillaja tech?", zh: "皂苷技术？" }, options: { en: ["liposomal","micelle","nanoemulsion","coating"], zh: ["脂质体","微胶粒","纳米乳化","包衣"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Maintenance dose?", zh: "维护用量？" }, options: { en: ["1 packet","2 softgels","4 caps","1 softgel+4 caps"], zh: ["1包","2软胶囊","4胶囊","1软胶囊+4胶囊"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 6,
+  section: "product",
+  productKey: "purifi",
+  title: { en: "Purifí", zh: "Purifí" },
+  hook: { en: "Your body works hard for you every day — Purifí helps you support it right back.", zh: "身体每天为你努力——Purifí帮你反过来支持它。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A daily whole-body detox supporting the body's elimination organs (Ingestible Wellness).</p>
+<h4>Key ingredients</h4><ul><li>Humic Shale Extract (fulvic acid)</li><li>Liposomal Milk Thistle</li><li>Burdock Root</li><li>Kelp</li><li>Apple Pectin</li><li>Coriander Leaf</li><li>Mullein Leaf</li></ul>
+<h4>Benefits</h4><ul><li>assists in removing harmful toxins and pollutants</li><li>helps remove heavy-metal toxins</li><li>supports increased nutrient absorption</li><li>supports the body's elimination organs</li></ul><p>Results vary from person to person.</p>
+<h4>Science</h4><p>absorption 88% (second-highest in the line vs ~10% control).</p><p><em>Study figures — verify against official THREE PDFs before public use.</em></p>
+<h4>How to use</h4><p>best taken with water; no specific food requirement.</p>
+<h4>Ideal customer</h4><p>anyone wanting regular whole-body detox support (also pairs in weight-management and detox stacks).</p>
+<h4>Memorable hook</h4><p>"Your body's daily reset button."</p>`,
+    zh: `<h4>这是什么</h4><p>每日全身排毒，支持身体排毒器官（可摄入健康）。</p>
+<h4>关键成分</h4><ul><li>腐殖页岩提取物（富里酸）</li><li>脂质体水飞蓟</li><li>牛蒡根</li><li>海带</li><li>苹果果胶</li><li>香菜叶</li><li>毛蕊花叶</li></ul>
+<h4>益处</h4><ul><li>辅助清除有害毒素与污染物</li><li>帮助清除重金属毒素</li><li>支持提升营养吸收</li><li>支持身体排毒器官</li></ul><p>效果因人而异。</p>
+<h4>科学</h4><p>吸收率88%（系列第二高，对照约10%）。</p><p><em>研究数据——公开使用前请核对THREE官方文件。</em></p>
+<h4>使用</h4><p>建议配水服用；无特定饮食要求。</p>
+<h4>理想客户</h4><p>想要定期全身排毒支持的人（也可用于体重管理与排毒组合）。</p>
+<h4>便于记忆</h4><p>"身体每天的重启键。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Category?", zh: "品类？" }, a: { en: "Ingestible Wellness — daily whole-body detox.", zh: "可摄入健康——每日全身排毒。" } },
+    { q: { en: "Three ingredients?", zh: "三种成分？" }, a: { en: "e.g. Humic Shale/Milk Thistle/Burdock.", zh: "如腐殖页岩/水飞蓟/牛蒡。" } },
+    { q: { en: "Supports which organs?", zh: "支持哪些器官？" }, a: { en: "the elimination organs.", zh: "排毒器官。" } },
+    { q: { en: "Absorption/rank?", zh: "吸收率/排名？" }, a: { en: "88%, 2nd-highest.", zh: "88%，第二高。" } },
+    { q: { en: "Control %?", zh: "对照？" }, a: { en: "~10%.", zh: "约10%。" } },
+    { q: { en: "How taken?", zh: "如何服用？" }, a: { en: "with water, no food requirement.", zh: "配水，无饮食要求。" } }
+  ],
+  quiz: [
+    { q: { en: "Purifí is?", zh: "Purifí是？" }, options: { en: ["energy drink","daily whole-body detox","protein","sleep aid"], zh: ["能量饮料","每日全身排毒","蛋白粉","助眠"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "NOT a Purifí ingredient?", zh: "非Purifí成分？" }, options: { en: ["Burdock","Kelp","Reishi","Mullein"], zh: ["牛蒡","海带","灵芝","毛蕊花"] }, answer: 2, rationale: { en: "Reishi = Imúne", zh: "灵芝＝Imúne" } },
+    { q: { en: "Absorption vs control?", zh: "吸收率对照？" }, options: { en: ["10/10","88/~10","44/~10","73/~10"], zh: ["10/10","88/约10","44/约10","73/约10"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Pairs with?", zh: "搭配？" }, options: { en: ["never combine","weight-mgmt & detox stacks","only skincare","only immune"], zh: ["不搭配","体重管理与排毒","仅护肤","仅免疫"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "How taken?", zh: "如何服用？" }, options: { en: ["empty stomach night","high-fat meal","with water, no food requirement","with dairy"], zh: ["空腹夜间","高脂餐","配水无饮食要求","配乳制品"] }, answer: 2, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 7,
+  section: "product",
+  productKey: "collagene",
+  title: { en: "Collagène", zh: "Collagène" },
+  hook: { en: "Beauty isn't just skin deep — Collagène nourishes from the inside out.", zh: "美丽不止于表面——Collagène由内而外滋养。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A marine-sourced collagen blend that nourishes cells to keep skin, hair, and nails vibrant (Ingestible Wellness).</p>
+<h4>Key ingredients</h4><ul><li>5 g wild-caught Marine Collagen (hydrolyzed & micronized)</li><li>Pomegranate Juice Concentrate (punicalagins)</li><li>Hyaluronic Acid</li><li>Biotin</li><li>Keratin</li></ul>
+<h4>Benefits</h4><ul><li>supports vibrant, youthful-looking skin</li><li>maintains healthy hair and nails</li><li>supports healthy immune response and joints</li></ul><p>Results vary from person to person.</p>
+<h4>Science</h4><p>absorption 73% (vs ~10% control); epigenetics BDNF +570%; Collagène Focus Study (20 volunteers, 10-day cycle over two months): after 10 days — 70% more even skin tone, >50% brighter skin, 45% healthier hair, 40% reduced fine lines; after 60 days — 80% reduced fine lines, >60% healthier-feeling hair, >50% reduced dark under-eye circles & smoother skin.</p><p><em>Study figures — verify against official THREE PDFs before public use.</em></p>
+<h4>How to use</h4><p>1 packet/day; take 10 consecutive days then stop; repeat monthly; any time of day.</p>
+<h4>Ideal customer</h4><p>"beauty from within" (skin, hair, nails).</p>
+<h4>Memorable hook</h4><p>"Beauty from the inside out, one packet at a time."</p>`,
+    zh: `<h4>这是什么</h4><p>海洋胶原蛋白配方，滋养细胞以维持皮肤、头发、指甲的活力（可摄入健康）。</p>
+<h4>关键成分</h4><ul><li>5克野生海洋胶原蛋白（水解微粒化）</li><li>石榴汁浓缩液（鞣花丹宁）</li><li>玻尿酸</li><li>生物素</li><li>角蛋白</li></ul>
+<h4>益处</h4><ul><li>支持皮肤展现活力年轻外观</li><li>维持健康头发与指甲</li><li>支持健康免疫反应与关节</li></ul><p>效果因人而异。</p>
+<h4>科学</h4><p>吸收率73%（对照约10%）；表观遗传 BDNF +570%；专项研究（20名志愿者，两个月内10天为周期）：10天后——70%肤色更均匀、>50%更亮泽、45%头发更健康、40%细纹减少；60天后——80%细纹减少、>60%头发更健康、>50%黑眼圈减少且皮肤更光滑。</p><p><em>研究数据——公开使用前请核对THREE官方文件。</em></p>
+<h4>使用</h4><p>每日1包；连续10天后停用；每月重复；任意时间。</p>
+<h4>理想客户</h4><p>"由内而外之美"（皮肤、头发、指甲）。</p>
+<h4>便于记忆</h4><p>"由内而外的美丽，一包一包积累。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Marine Collagen/packet?", zh: "每包胶原？" }, a: { en: "5 g (hydrolyzed & micronized).", zh: "5克（水解微粒化）。" } },
+    { q: { en: "Cycle?", zh: "周期？" }, a: { en: "10 days on, stop, repeat monthly.", zh: "10天服用停用，每月重复。" } },
+    { q: { en: "Absorption?", zh: "吸收率？" }, a: { en: "73% vs ~10%.", zh: "73% vs约10%。" } },
+    { q: { en: "60-day fine-lines result?", zh: "60天细纹结果？" }, a: { en: "80%.", zh: "80%。" } },
+    { q: { en: "Two other ingredients?", zh: "另两种成分？" }, a: { en: "e.g. Hyaluronic Acid, Biotin.", zh: "如玻尿酸、生物素。" } },
+    { q: { en: "Epigenetic marker?", zh: "表观遗传？" }, a: { en: "BDNF +570%.", zh: "BDNF +570%。" } }
+  ],
+  quiz: [
+    { q: { en: "Source?", zh: "来源？" }, options: { en: ["bovine","wild-caught marine","plant","synthetic"], zh: ["牛源","野生海洋","植物","合成"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Protocol?", zh: "方案？" }, options: { en: ["daily forever","10 days on/off, monthly","once monthly","only with meals"], zh: ["每天不停","10天服停/每月","每月一次","仅随餐"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "10-day brighter skin?", zh: "10天更亮泽？" }, options: { en: ["40","45",">50%","80%"], zh: ["40","45",">50%","80%"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Absorption?", zh: "吸收率？" }, options: { en: ["44","73","88","10%"], zh: ["44","73","88","10%"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Compliant benefit?", zh: "合规益处？" }, options: { en: ["cures wrinkles","treats disease","supports youthful-looking skin","prevents aging"], zh: ["治愈皱纹","治疗疾病","支持年轻外观","预防衰老"] }, answer: 2, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 8,
+  section: "product",
+  productKey: "imune",
+  title: { en: "Imúne", zh: "Imúne" },
+  hook: { en: "Your immune system has two teams — Imúne trains them both.", zh: "你的免疫系统有两支\"队伍\"——Imúne同时训练它们。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>Total-body immune support enhancing both innate and adaptive immunity at the cellular level (Ingestible Wellness).</p>
+<h4>Key ingredients</h4><ul><li>Liposomal Quercetin</li><li>Reishi mushroom</li><li>Nano Silver</li><li>Zinc</li><li>Vitamin C</li><li>Cordyceps sinensis</li><li>Elderberry</li></ul>
+<h4>Benefits</h4><ul><li>promotes innate and adaptive immunity</li><li>supports healthy immune response</li><li>supports the gut microbiome (where ~80% of the immune system resides)</li></ul><p>Results vary from person to person.</p>
+<h4>Science</h4><p>absorption 44% (4.4× the ~10% control).</p><p><em>Study figures — verify against official THREE PDFs before public use.</em></p>
+<h4>How to use</h4><p>2 capsules daily; with or without food; many use it evening/bedtime.</p>
+<h4>Ideal customer</h4><p>anyone wanting immune resilience (innate + adaptive).</p>
+<h4>Memorable hook</h4><p>"Trains your immune system's whole team — innate and adaptive."</p>`,
+    zh: `<h4>这是什么</h4><p>全身免疫支持，在细胞层面增强先天性与适应性免疫（可摄入健康）。</p>
+<h4>关键成分</h4><ul><li>脂质体槲皮素</li><li>灵芝</li><li>纳米银</li><li>锌</li><li>维生素C</li><li>冬虫夏草</li><li>接骨木莓</li></ul>
+<h4>益处</h4><ul><li>促进先天性与适应性免疫</li><li>支持健康免疫反应</li><li>支持肠道菌群（约80%免疫系统在肠道）</li></ul><p>效果因人而异。</p>
+<h4>科学</h4><p>吸收率44%（约10%对照的4.4倍）。</p><p><em>研究数据——公开使用前请核对THREE官方文件。</em></p>
+<h4>使用</h4><p>每日2粒胶囊；随餐或空腹；许多人晚间/睡前服用。</p>
+<h4>理想客户</h4><p>想要免疫韧性（先天＋适应）的人。</p>
+<h4>便于记忆</h4><p>"训练免疫系统的整支队伍——先天与适应。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Two immunity types?", zh: "两种免疫？" }, a: { en: "innate + adaptive.", zh: "先天＋适应。" } },
+    { q: { en: "% of immune system in gut?", zh: "肠道占免疫系统比例？" }, a: { en: "~80%.", zh: "约80%。" } },
+    { q: { en: "Absorption?", zh: "吸收率？" }, a: { en: "44% (4.4×).", zh: "44%（4.4倍）。" } },
+    { q: { en: "Daily dose?", zh: "每日用量？" }, a: { en: "2 capsules.", zh: "2粒。" } },
+    { q: { en: "Three ingredients?", zh: "三种成分？" }, a: { en: "e.g. Quercetin/Reishi/Zinc.", zh: "如槲皮素/灵芝/锌。" } },
+    { q: { en: "When taken?", zh: "何时服用？" }, a: { en: "with/without food, often evening.", zh: "随餐或空腹，常晚间。" } }
+  ],
+  quiz: [
+    { q: { en: "Supports?", zh: "支持？" }, options: { en: ["innate only","adaptive only","both innate & adaptive","neither"], zh: ["仅先天","仅适应","先天与适应","都不"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "% in gut?", zh: "肠道占比？" }, options: { en: ["40","60","80","100"], zh: ["40","60","80","100"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Absorption?", zh: "吸收率？" }, options: { en: ["4.4%","44%(4.4×)","88%","73%"], zh: ["4.4%","44%(4.4×)","88%","73%"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Daily dose?", zh: "每日用量？" }, options: { en: ["1","2 caps","4","1 packet"], zh: ["1","2粒","4","1包"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "In Imúne not Purifí/Collagène?", zh: "Imúne独有（非Purifí/Collagène）？" }, options: { en: ["Kelp","Biotin","Cordyceps sinensis","Apple Pectin"], zh: ["海带","生物素","冬虫夏草","苹果果胶"] }, answer: 2, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 9,
+  section: "product",
+  productKey: "glpthree",
+  title: { en: "GLP THREE", zh: "GLP THREE" },
+  hook: { en: "Quiet the food noise — naturally.", zh: "自然平息\"食欲噪音\"。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>An all-natural metabolic-health liquid drop supporting weight management by curbing food cravings (Ingestible Wellness — metabolic health).</p>
+<h4>Key ingredients</h4><ul><li>MBC-267 Peptide Complex (267 naturally occurring peptides from salmon and mushrooms)</li><li>Saffron Extract</li><li>Panax Ginseng</li><li>Hops</li></ul>
+<h4>Benefits</h4><ul><li>obliterates food cravings to help feel fuller longer</li><li>supports healthy weight management without extreme dieting</li><li>helps maintain lean muscle mass</li></ul><p>Results vary from person to person.</p>
+<h4>Science</h4><p>GLP-1 is a naturally occurring peptide hormone signaling brain, liver, and pancreas to regulate appetite and blood sugar; natural half-life ~90 sec–2 min before enzyme DPP4 breaks it down. Food noise = cravings from hormonal imbalance; activating GLP-1 "quiets the noise." Gut-brain: satiety travels gut → vagus nerve → brain. Study of 100 people: 90% decreased food cravings, 85% slept better, 75% mood/focus boost.</p><p><em>Study figures — verify against official THREE PDFs before public use.</em></p>
+<h4>How to use</h4><p>¾ dropper (0.83 ml) on/under the tongue, 30 min before your main meal, or as desired. Dr. Dan's Daily Blueprint: twice daily, 30 min before main meals.</p>
+<h4>Ideal customer</h4><p>adults with weight-management goals who want to curb cravings naturally.</p>
+<h4>Memorable hook</h4><p>"The Janitor's Cart / Taylor Swift" — the fragile MBC-267 peptide slips past the stomach hidden via Polyphenol Complexation to reach the cell.</p>`,
+    zh: `<h4>这是什么</h4><p>全天然代谢健康液体滴剂，通过抑制食欲渴望支持体重管理（可摄入健康——代谢健康）。</p>
+<h4>关键成分</h4><ul><li>MBC-267肽复合物（源自三文鱼和蘑菇的267种天然肽）</li><li>藏红花提取物</li><li>人参</li><li>啤酒花</li></ul>
+<h4>益处</h4><ul><li>消除食欲渴望、更持久饱腹</li><li>支持健康体重管理，无需极端节食</li><li>帮助维持瘦体重</li></ul><p>效果因人而异。</p>
+<h4>科学</h4><p>GLP-1是天然肽类激素，向大脑、肝脏、胰腺发信号调节食欲与血糖；天然半衰期约90秒–2分钟，随后被DPP4分解。食物噪音＝激素失衡引发的渴望；激活GLP-1"平息噪音"。肠脑：饱腹信号 肠道→迷走神经→大脑。100人研究：90%食欲渴望减少，85%睡眠改善，75%情绪/专注提升。</p><p><em>研究数据——公开使用前请核对THREE官方文件。</em></p>
+<h4>使用</h4><p>¾滴管（0.83毫升）舌下/舌上，正餐前30分钟，或按需。Dr. Dan每日蓝图：每日两次，正餐前30分钟。</p>
+<h4>理想客户</h4><p>有体重管理目标、想自然抑制渴望的成年人。</p>
+<h4>便于记忆</h4><p>"清洁工推车/泰勒·斯威夫特"——脆弱的MBC-267肽借多酚络合隐藏，潜入细胞。</p>`
+  },
+  flashcards: [
+    { q: { en: "Category?", zh: "品类？" }, a: { en: "metabolic health.", zh: "代谢健康。" } },
+    { q: { en: "MBC-267?", zh: "MBC-267？" }, a: { en: "267 peptides from salmon & mushrooms.", zh: "源自三文鱼与蘑菇的267种肽。" } },
+    { q: { en: "GLP-1 half-life & enzyme?", zh: "GLP-1半衰期与酶？" }, a: { en: "~90 sec–2 min; DPP4.", zh: "约90秒–2分钟；DPP4。" } },
+    { q: { en: "% decreased cravings?", zh: "渴望减少比例？" }, a: { en: "90%.", zh: "90%。" } },
+    { q: { en: "Delivery tech?", zh: "递送技术？" }, a: { en: "Polyphenol Complexation.", zh: "多酚络合。" } },
+    { q: { en: "Blueprint timing?", zh: "蓝图时机？" }, a: { en: "twice daily, 30 min before meals.", zh: "每日两次餐前30分钟。" } }
+  ],
+  quiz: [
+    { q: { en: "Enzyme that breaks GLP-1?", zh: "分解GLP-1的酶？" }, options: { en: ["DPP4","MBC-267","Rosavins","vagus"], zh: ["DPP4","MBC-267","迷迭香苷","迷走"] }, answer: 0, rationale: { en: "", zh: "" } },
+    { q: { en: "MBC-267 sources?", zh: "MBC-267来源？" }, options: { en: ["green tea+Rhodiola","salmon+mushrooms","saffron+ginseng","hops+grapes"], zh: ["绿茶+红景天","三文鱼+蘑菇","藏红花+人参","啤酒花+葡萄"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Satiety signaling?", zh: "饱腹信号？" }, options: { en: ["blood only","vagus nerve","DPP4","polyphenol"], zh: ["仅血液","迷走神经","DPP4","多酚"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "% slept better?", zh: "睡眠改善比例？" }, options: { en: ["75","85","90","100"], zh: ["75","85","90","100"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Blueprint use?", zh: "蓝图用法？" }, options: { en: ["bedtime only","weekly","twice daily 30 min before meals","when traveling"], zh: ["仅睡前","每周","每日两次餐前30分钟","旅行时"] }, answer: 2, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 10,
+  section: "product",
+  productKey: "kynetik",
+  title: { en: "Kynetik", zh: "Kynetik" },
+  hook: { en: "Clean energy, no crash.", zh: "纯净能量，不留崩溃感。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A clean, plant-powered drink mix that energizes and hydrates body and mind while combating burnout (Ingestible Wellness — natural energy).</p>
+<h4>Key ingredients</h4><ul><li>200 mg Natural Caffeine (from green tea)</li><li>Yerba Santa Plant</li><li>Rosavins (from Rhodiola)</li><li>Grape Polyphenols</li><li>essential electrolytes</li></ul>
+<h4>Benefits</h4><ul><li>supports smooth, sustained energy without jitters</li><li>assists in combating adrenal fatigue</li><li>supports deep hydration and mental clarity</li></ul><p>Results vary from person to person.</p>
+<h4>How to use</h4><p>add 1 pack to 8–10 oz cold water; shake/stir well; do NOT exceed 2 servings/day; avoid late-evening use if caffeine-sensitive. Adults; caffeine-sensitivity caution (not a regional restriction — available across Asia Pacific incl. Malaysia).</p>
+<h4>Ideal customer</h4><p>adults needing clean, sustained energy without the crash.</p>
+<h4>Memorable hook</h4><p>"It doesn't spike you and drop you — it lifts you and holds you there."</p>`,
+    zh: `<h4>这是什么</h4><p>纯净植物动力冲饮，为身心注入活力并补水，同时对抗身心倦怠（可摄入健康——天然能量）。</p>
+<h4>关键成分</h4><ul><li>200毫克天然咖啡因（源自绿茶）</li><li>圣草（Yerba Santa）</li><li>迷迭香苷（源自红景天）</li><li>葡萄多酚</li><li>必需电解质</li></ul>
+<h4>益处</h4><ul><li>支持平稳持久的能量、不心悸</li><li>辅助对抗肾上腺疲劳</li><li>支持深层补水与头脑清晰</li></ul><p>效果因人而异。</p>
+<h4>使用</h4><p>1包冲入8–10盎司冷水；充分摇匀；每日不超过2份；对咖啡因敏感者避免深夜使用。成年人；咖啡因敏感提示（非地区限制——含马来西亚在内的亚太均有售）。</p>
+<h4>理想客户</h4><p>需要纯净持久能量、不想崩溃感的成年人。</p>
+<h4>便于记忆</h4><p>"不会冲高又骤跌——它提升你并让你稳稳保持。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Category?", zh: "品类？" }, a: { en: "natural energy.", zh: "天然能量。" } },
+    { q: { en: "Caffeine amount & source?", zh: "咖啡因量与来源？" }, a: { en: "200 mg from green tea.", zh: "200毫克，绿茶。" } },
+    { q: { en: "Rosavins from?", zh: "迷迭香苷来自？" }, a: { en: "Rhodiola.", zh: "红景天。" } },
+    { q: { en: "Max daily?", zh: "每日上限？" }, a: { en: "2 servings.", zh: "2份。" } },
+    { q: { en: "Prep?", zh: "冲泡？" }, a: { en: "1 pack in 8–10 oz cold water.", zh: "1包入8–10盎司冷水。" } },
+    { q: { en: "Who avoids late-evening use?", zh: "谁避免深夜使用？" }, a: { en: "caffeine-sensitive.", zh: "咖啡因敏感者。" } }
+  ],
+  quiz: [
+    { q: { en: "Caffeine source?", zh: "咖啡因来源？" }, options: { en: ["coffee beans","green tea","Yerba Santa","Rhodiola"], zh: ["咖啡豆","绿茶","圣草","红景天"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Caffeine amount?", zh: "咖啡因量？" }, options: { en: ["100","150","200","250 mg"], zh: ["100","150","200","250毫克"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Max servings/day?", zh: "每日上限？" }, options: { en: ["1","2","3","no limit"], zh: ["1","2","3","无限"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Rosavins plant?", zh: "迷迭香苷植物？" }, options: { en: ["grape","Yerba Santa","Rhodiola","green tea"], zh: ["葡萄","圣草","红景天","绿茶"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Who avoids late use?", zh: "谁避免深夜用？" }, options: { en: ["weight-goal adults","caffeine-sensitive","athletes","over-40"], zh: ["体重目标成人","咖啡因敏感","运动员","40岁以上"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 11,
+  section: "product",
+  productKey: "visage-cleanse",
+  title: { en: "Visage Pure Cleanse (Step 1)", zh: "Visage 净澈洁面乳（第1步）" },
+  hook: { en: "The first move in the ritual — clean skin that's already listening.", zh: "仪式第一步——被清洁的同时已在\"倾听\"。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A gentle cleanser that removes impurities while preserving essential moisture and promoting healthy skin communication. Step 1, preparing skin to receive later steps.</p>
+<h4>Key actives</h4><ul><li>Allantoin</li><li>Plantago Major Leaf Extract</li></ul>
+<h4>Benefits</h4><ul><li>removes makeup and impurities while helping maintain natural oils</li><li>helps maintain intense moisture</li><li>primes skin (via Quorum Sensing) to support optimal absorption of later steps</li></ul><p>Results vary from person to person.</p>
+<h4>Ritual step & apply (Step 1 of 4)</h4><p>apply a small amount to a damp face and neck; massage gently ~30 seconds; rinse thoroughly and pat dry.</p>
+<h4>Memorable hook</h4><p>"Opening the conversation — clean, calm skin primed to listen."</p>`,
+    zh: `<h4>这是什么</h4><p>温和洁面，去除杂质同时保留必需水分并促进健康肌肤沟通。第1步，为后续步骤做准备。</p>
+<h4>核心成分</h4><ul><li>尿囊素</li><li>大车前叶提取物</li></ul>
+<h4>益处</h4><ul><li>去除彩妆与杂质同时帮助维持天然油脂</li><li>帮助维持充足水分</li><li>通过群体感应为肌肤做准备，支持后续最佳吸收</li></ul><p>效果因人而异。</p>
+<h4>步骤与使用（四步之第1步）</h4><p>取适量于湿润面部与颈部，轻柔按摩约30秒，彻底冲洗并轻拍至干。</p>
+<h4>便于记忆</h4><p>"开启对话——干净平静的肌肤准备倾听。"</p>`
+  },
+  visageIntro: {
+    en: `<strong>"Skincare with a Brain."</strong> Visage is a neurocosmetic line that moves beyond surface beauty to support the skin's internal communication and its connection to the mind. Skin contains tiny nerve fibers that send signals to the brain; Visage uses natural plant molecules designed to interact with these fibers and support "feel-good" molecules, promoting a positive mood and well-being with every application. Quorum Sensing Technology lets cells coordinate "like a team," helping maintain skin balance and priming cells to respond to the actives. The ritual (AM & PM, in order): Cleanse → Tone → Serum → Crème.`,
+    zh: `<strong>"有智慧的护肤"。</strong> Visage 是神经美肌系列，超越表面美丽，支持肌肤内在沟通及其与心智的连接。肌肤含微小神经纤维向大脑传信号；Visage 用天然植物分子与之互动并支持"愉悦感"分子，每次使用都促进积极情绪与身心健康。群体感应技术让细胞像团队一样协调，帮助维持肌肤平衡并为活性成分做准备。护理仪式（早晚，按序）：洁面 → 爽肤 → 精华 → 面霜。`
+  },
+  flashcards: [
+    { q: { en: "Ritual step?", zh: "仪式步骤？" }, a: { en: "Step 1 (AM & PM).", zh: "第1步（早晚）。" } },
+    { q: { en: "Two ingredients?", zh: "两成分？" }, a: { en: "Allantoin + Plantago Major Leaf Extract.", zh: "尿囊素＋大车前叶。" } },
+    { q: { en: "Massage time?", zh: "按摩时长？" }, a: { en: "~30 seconds.", zh: "约30秒。" } },
+    { q: { en: "Priming tech?", zh: "准备技术？" }, a: { en: "Quorum Sensing.", zh: "群体感应。" } },
+    { q: { en: "Strips oils?", zh: "会带走油脂吗？" }, a: { en: "No — preserves natural oils/moisture.", zh: "不会——保留天然油脂/水分。" } }
+  ],
+  quiz: [
+    { q: { en: "Ritual position?", zh: "仪式位置？" }, options: { en: ["4","2","1","3"], zh: ["4","2","1","3"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Which ingredient?", zh: "哪种成分？" }, options: { en: ["Bakuchiol","Allantoin","Niacinamide","Panax Ginseng"], zh: ["黑种草醇","尿囊素","烟酰胺","人参"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "How applied?", zh: "如何使用？" }, options: { en: ["dry skin overnight","damp face/neck, massage, rinse","eyes only","cotton pad, no water"], zh: ["干肤过夜","湿润面颈按摩后冲洗","仅眼周","化妆棉干擦"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Quorum Sensing role?", zh: "群体感应作用？" }, options: { en: ["whitens","primes skin for later absorption","removes wrinkles","adds fragrance"], zh: ["美白","为后续吸收做准备","去皱","加香"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 12,
+  section: "product",
+  productKey: "visage-toner",
+  title: { en: "Visage Radiant Toner (Step 2)", zh: "Visage 亮采爽肤水（第2步）" },
+  hook: { en: "A misting reset that balances and preps skin for what's next.", zh: "喷雾式重启，平衡肌肤并为下一步做准备。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A vitamin-rich toner that balances pH and refines the appearance of pores via Quorum Sensing Technology. Step 2, right after cleansing.</p>
+<h4>Key actives</h4><ul><li>Niacinamide</li><li>Beta-Glucan</li><li>Plantain Leaf Extract</li><li>Magnesium Ascorbyl Phosphate (Vitamin C)</li></ul>
+<h4>Benefits</h4><ul><li>maintains natural pH</li><li>reduces the appearance of pores</li><li>helps maintain intense moisture for a dewy look</li></ul><p>Results vary from person to person.</p>
+<h4>Ritual step & apply (Step 2 of 4)</h4><p>mist evenly over the face from 6–8 inches away, eyes closed; allow to absorb before the next step.</p>
+<h4>Memorable hook</h4><p>"A quick mist, a full reset — pH balanced, pores refined, dew delivered."</p>`,
+    zh: `<h4>这是什么</h4><p>富含维生素的爽肤水，通过群体感应技术维持pH平衡并减少毛孔外观。第2步，洁面后立即使用。</p>
+<h4>核心成分</h4><ul><li>烟酰胺</li><li>β-葡聚糖</li><li>车前叶提取物</li><li>抗坏血酸磷酸酯镁（维生素C）</li></ul>
+<h4>益处</h4><ul><li>维持天然pH</li><li>减少毛孔外观</li><li>帮助维持充足水分呈现水润感</li></ul><p>效果因人而异。</p>
+<h4>步骤与使用（四步之第2步）</h4><p>距面部6–8英寸均匀喷洒，闭眼；待吸收后再下一步。</p>
+<h4>便于记忆</h4><p>"一次轻喷，全面重启——pH平衡、毛孔改善、水润呈现。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Pore-refining tech?", zh: "改善毛孔技术？" }, a: { en: "Quorum Sensing.", zh: "群体感应。" } },
+    { q: { en: "Two ingredients?", zh: "两成分？" }, a: { en: "Niacinamide + Beta-Glucan.", zh: "烟酰胺＋β-葡聚糖。" } },
+    { q: { en: "Mist distance?", zh: "喷洒距离？" }, a: { en: "6–8 inches, eyes closed.", zh: "6–8英寸，闭眼。" } },
+    { q: { en: "Vitamin C form?", zh: "维C形式？" }, a: { en: "Magnesium Ascorbyl Phosphate.", zh: "抗坏血酸磷酸酯镁。" } },
+    { q: { en: "pH effect?", zh: "pH作用？" }, a: { en: "maintains natural pH.", zh: "维持天然pH。" } }
+  ],
+  quiz: [
+    { q: { en: "Mist distance?", zh: "喷洒距离？" }, options: { en: ["1–2","6–8","12–15","direct"], zh: ["1–2","6–8","12–15","直接"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Vitamin C form?", zh: "维C形式？" }, options: { en: ["Ascorbic Acid","Sodium Ascorbate","Magnesium Ascorbyl Phosphate","Ascorbyl Glucoside"], zh: ["抗坏血酸","抗坏血酸钠","抗坏血酸磷酸酯镁","抗坏血酸葡糖苷"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Stated benefit?", zh: "明确益处？" }, options: { en: ["removes wrinkles permanently","reduces appearance of pores","treats acne","prevents aging"], zh: ["永久去皱","减少毛孔外观","治疗痤疮","阻止衰老"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Sequence?", zh: "顺序？" }, options: { en: ["before cleansing","after cleansing, before serum","after crème","replaces serum"], zh: ["洁面前","洁面后精华前","面霜后","替代精华"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 13,
+  section: "product",
+  productKey: "visage-serum",
+  title: { en: "Visage Super Serum (Step 3)", zh: "Visage 超能精华（第3步）" },
+  hook: { en: "The \"miracle worker\" step — visible rejuvenation meets everyday protection.", zh: "\"奇迹之作\"——可见焕活，遇上日常防护。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A neurocosmetic serum described as a "miracle worker" that combats environmental stressors and provides visible rejuvenation. Step 3, after toner and before moisturizer.</p>
+<h4>Key actives</h4><p>THREE Miracle Elixir — Coriander (Coriandrum Sativum: supports skin comfort/resilience) · Zanthoxylum Alatum (nourishes for a revitalized glow) · Sunflower Sprout (Helianthus Annuus: supports the longevity molecule NAD+) · Vitex Agnus-Castus (supports collagen production for elasticity); plus Bakuchiol (gentle retinol alternative; supports collagen synthesis; reduces the appearance of fine lines/wrinkles and UV-related visual effects without the irritation of other strong anti-aging ingredients) · Allantoin · Squalane · Vitamin C.</p>
+<h4>Benefits</h4><ul><li>reduces the appearance of wrinkles and expression lines</li><li>supports protection from environmental stressors</li><li>supports rejuvenation and overall well-being</li></ul><p>Results vary from person to person.</p>
+<h4>Ritual step & apply (Step 3 of 4)</h4><p>apply a few drops to clean face and neck, after toner and before moisturizer.</p>
+<h4>Memorable hook</h4><p>"Bakuchiol is the gentle retinol alternative — visible results, without the irritation."</p>`,
+    zh: `<h4>这是什么</h4><p>被称为"奇迹之作"的神经美肌精华，对抗环境压力源、提供可见焕活。第3步，爽肤后、保湿前。</p>
+<h4>核心成分</h4><p>THREE奇迹精粹——芫荽（Coriandrum Sativum：支持肌肤舒适度/韧性）· 竹叶花椒（滋养、焕活光泽）· 向日葵芽（Helianthus Annuus：支持长寿分子NAD+）· 穗花牡荆（支持胶原生成、维持弹性）；另有 Bakuchiol黑种草醇（温和视黄醇替代；支持胶原合成；减少细纹皱纹与紫外线视觉影响的外观，且无其他强效抗衰成分的刺激）· 尿囊素 · 角鲨烷 · 维生素C。</p>
+<h4>益处</h4><ul><li>减少皱纹与表情纹外观</li><li>支持抵御环境压力源</li><li>支持焕活与整体身心健康</li></ul><p>效果因人而异。</p>
+<h4>步骤与使用（四步之第3步）</h4><p>取数滴于洁净面颈，爽肤后、保湿前使用。</p>
+<h4>便于记忆</h4><p>"黑种草醇是温和视黄醇替代——效果可见，却不刺激。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Nickname?", zh: "别称？" }, a: { en: "\"miracle worker.\"", zh: "\"奇迹之作\"。" } },
+    { q: { en: "Four Elixir botanicals?", zh: "四种精粹植物？" }, a: { en: "Coriander, Zanthoxylum Alatum, Sunflower Sprout, Vitex Agnus-Castus.", zh: "芫荽、竹叶花椒、向日葵芽、穗花牡荆。" } },
+    { q: { en: "NAD+ supporter?", zh: "NAD+支持者？" }, a: { en: "Sunflower Sprout.", zh: "向日葵芽。" } },
+    { q: { en: "Bakuchiol is a gentle alternative to?", zh: "黑种草醇是谁的温和替代？" }, a: { en: "retinol.", zh: "视黄醇。" } },
+    { q: { en: "Ritual step?", zh: "仪式步骤？" }, a: { en: "Step 3 (after toner, before crème).", zh: "第3步（爽肤后、面霜前）。" } }
+  ],
+  quiz: [
+    { q: { en: "Which supports collagen for elasticity?", zh: "谁支持胶原以维持弹性？" }, options: { en: ["Coriander","Zanthoxylum","Sunflower Sprout","Vitex Agnus-Castus"], zh: ["芫荽","竹叶花椒","向日葵芽","穗花牡荆"] }, answer: 3, rationale: { en: "", zh: "" } },
+    { q: { en: "Bakuchiol vs strong anti-aging?", zh: "黑种草醇对比强效抗衰？" }, options: { en: ["faster + more irritation","similar benefit, less irritation","no effect","replaces Vitamin C"], zh: ["更快更刺激","效果相近更少刺激","无效","取代维C"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Order?", zh: "顺序？" }, options: { en: ["before cleansing","after cleansing before toner","after toner before moisturizer","final step"], zh: ["洁面前","洁面后爽肤前","爽肤后保湿前","最后一步"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Supports skin comfort/resilience?", zh: "支持舒适度/韧性？" }, options: { en: ["Coriander","Sunflower Sprout","Squalane","Panax Ginseng"], zh: ["芫荽","向日葵芽","角鲨烷","人参"] }, answer: 0, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 14,
+  section: "product",
+  productKey: "visage-creme",
+  title: { en: "Visage Crème Caviar (Step 4)", zh: "Visage 鱼子面霜（第4步）" },
+  hook: { en: "The finishing step — rare botanicals, calm skin, lasting glow.", zh: "收尾一步——珍稀植萃，肌肤安定，光泽持久。" },
+  guideHtml: {
+    en: `<h4>What it is</h4><p>A luxurious moisturizer with rare botanical extracts and neurocosmetic molecules. Step 4, the final step, sealing in everything before it.</p>
+<h4>Key actives</h4><p>Mountain Caviar (Kochia Scoparia Fruit Extract — rare botanical thriving in extreme environments; locks in moisture, provides omega-3 fatty acids) · Neurocosmetic Peptides: Acetyl Hexapeptide-8 (supports relaxation of areas prone to expression lines), Palmitoyl Tetrapeptide-7 (sends soothing messages, aids comfort, supports longevity of existing collagen) · Panax Ginseng · Rosemary Leaf.</p>
+<h4>Benefits</h4><ul><li>helps maintain deep hydration without a heavy/greasy feel</li><li>supports the look of rested, glowing skin</li><li>assists in relaxing facial tension to reduce the appearance of fine lines</li></ul><p>Results vary from person to person.</p>
+<h4>Ritual step & apply (Step 4 of 4, final)</h4><p>apply a pearl-sized amount as the final step; massage onto face and neck in upward motions.</p>
+<h4>Memorable hook</h4><p>"Thrives in extreme environments — so it knows how to keep your skin soft and glowing in any of yours."</p>`,
+    zh: `<h4>这是什么</h4><p>含珍稀植萃与神经美肌分子的奢华保湿。第4步（最后一步），锁住之前所有步骤。</p>
+<h4>核心成分</h4><p>山地鱼子（地肤子果实提取物——极端环境中生长的珍稀植物；锁水、提供Omega-3脂肪酸）· 神经美肌肽：乙酰基六肽-8（支持易生表情纹部位放松）、棕榈酰基四肽-7（传递舒缓信息、辅助舒适、支持现有胶原持久性）· 人参 · 迷迭香叶。</p>
+<h4>益处</h4><ul><li>帮助维持深层保湿、不厚重不油腻</li><li>支持呈现休息充分、光泽焕发的肌肤</li><li>辅助放松面部紧绷以减少细纹外观</li></ul><p>效果因人而异。</p>
+<h4>步骤与使用（四步之第4步，最后）</h4><p>取珍珠大小作为最后一步，以向上手法按摩面颈。</p>
+<h4>便于记忆</h4><p>"能在极端环境生长——自然懂得让你的肌肤在任何环境下柔软有光泽。"</p>`
+  },
+  flashcards: [
+    { q: { en: "Rare botanical & where it thrives?", zh: "珍稀植萃及生长处？" }, a: { en: "Mountain Caviar (Kochia Scoparia), extreme environments.", zh: "山地鱼子（地肤子），极端环境。" } },
+    { q: { en: "Two peptides?", zh: "两种肽？" }, a: { en: "Acetyl Hexapeptide-8 + Palmitoyl Tetrapeptide-7.", zh: "乙酰基六肽-8＋棕榈酰基四肽-7。" } },
+    { q: { en: "Acetyl Hexapeptide-8 supports?", zh: "乙酰基六肽-8支持？" }, a: { en: "relaxation of expression-line-prone areas.", zh: "表情纹部位放松。" } },
+    { q: { en: "How applied?", zh: "如何使用？" }, a: { en: "pearl-sized, upward, final step.", zh: "珍珠大小，向上，最后一步。" } },
+    { q: { en: "Fatty acids provided?", zh: "提供脂肪酸？" }, a: { en: "omega-3.", zh: "Omega-3。" } }
+  ],
+  quiz: [
+    { q: { en: "Ritual step?", zh: "仪式步骤？" }, options: { en: ["1","2","3","4 (final)"], zh: ["1","2","3","4（最后）"] }, answer: 3, rationale: { en: "", zh: "" } },
+    { q: { en: "Which peptide soothes & supports existing collagen longevity?", zh: "哪种肽舒缓并支持现有胶原持久？" }, options: { en: ["Acetyl Hexapeptide-8","Palmitoyl Tetrapeptide-7","Bakuchiol","Niacinamide"], zh: ["乙酰基六肽-8","棕榈酰基四肽-7","黑种草醇","烟酰胺"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Amount?", zh: "用量？" }, options: { en: ["dime-sized","pearl-sized","handful","two pumps"], zh: ["硬币大","珍珠大","满把","两泵"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Mountain Caviar provides?", zh: "山地鱼子提供？" }, options: { en: ["retinol","niacinamide","omega-3 fatty acids","Vitamin C"], zh: ["视黄醇","烟酰胺","Omega-3脂肪酸","维生素C"] }, answer: 2, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 15,
+  section: "closing",
+  productKey: null,
+  title: { en: "Usage & Stacking", zh: "使用与叠加" },
+  hook: { en: "Master the daily rhythm and a shelf of products becomes one simple, repeatable routine customers can actually stick to.", zh: "掌握每日节奏，一整排产品就变成顾客真正能坚持的简单、可重复流程。" },
+  guideHtml: {
+    en: `<h4>Individual daily protocols</h4>
+<ul>
+<li>Vitalité — 1 softgel + 4 capsules daily, with water, morning, with a meal.</li>
+<li>Éternel — 1–2 packets daily, any time, with/without food.</li>
+<li>Revíve — 2 softgels daily maintenance, or as needed post-exercise.</li>
+<li>Purifí — with water; no specific food requirement.</li>
+<li>Collagène — 1 packet/day for 10 consecutive days, then stop; repeat monthly.</li>
+<li>Imúne — 2 capsules daily.</li>
+<li>GLP THREE — ¾ dropper (0.83 ml) under the tongue, 30 min before the main meal.</li>
+<li>Kynetik — 1 pack in 8–10 oz cold water; do not exceed 2 servings/day; avoid late evening if caffeine-sensitive.</li>
+</ul>
+<h4>The "Simple Stack" daily routine</h4>
+<table>
+<tr><td>Time</td><td>Products</td><td>Purpose</td></tr>
+<tr><td>Morning</td><td>Vitalité (1 softgel + 4 caps), Purifí (1 cap), Éternel (1 packet)</td><td>Nutritional foundation, internal detox support, age-defying antioxidants</td></tr>
+<tr><td>Mid-morning</td><td>Kynetik (1 stick in water)</td><td>Smooth, sustained energy and hydration</td></tr>
+<tr><td>30 min before lunch/dinner</td><td>GLP THREE (¾ dropper)</td><td>Turns down hunger; supports healthy glucose metabolism before meals</td></tr>
+<tr><td>Afternoon / post-workout</td><td>Revíve (2 softgels)</td><td>Healthy joints; eases muscle stiffness</td></tr>
+<tr><td>Evening / bedtime</td><td>Imúne (2 caps), Collagène (1 packet — only during the 10-day monthly cycle)</td><td>Immune support and cellular rejuvenation overnight</td></tr>
+</table>
+<h4>Ideal-customer logic — lead with the need</h4>
+<p>Daily cellular-nutrition foundation → Vitalité · Anti-aging/antioxidant → Éternel · Immune resilience → Imúne · Active, joint comfort/recovery → Revíve · Regular whole-body detox → Purifí · Beauty from within → Collagène · Weight-management, curb cravings → GLP THREE · Clean sustained energy → Kynetik · Premium neurocosmetic skincare → Visage.</p>
+<h4>Recommended stacks — by goal</h4>
+<p>Whole-body wellness → the Simple Six together · Weight management → GLP THREE (primary) + Purifí (support) · Joints & healthy inflammatory balance → Revíve + Éternel + Collagène · Detox → Purifí (anchor) + Vitalité · Beauty → Collagène (inside) + Visage line (outside) · Energy → Kynetik · Immunity → Imúne.</p>
+<h4>Practical tips</h4>
+<ul><li>take capsules/softgels with a full glass of water to support cellular delivery</li><li>keep customers on their daily essentials so they never run out</li><li>highly active users may prefer Revíve immediately after a workout</li><li>always include the required disclaimer</li></ul>`,
+    zh: `<h4>单品每日使用</h4>
+<ul>
+<li>Vitalité — 每日1软胶囊＋4胶囊，配水，早晨随餐。</li>
+<li>Éternel — 每日1–2包，任意时间，可搭配或不搭配食物。</li>
+<li>Revíve — 每日2软胶囊维护，或运动后按需。</li>
+<li>Purifí — 配水；无特定饮食要求。</li>
+<li>Collagène — 每日1包，连续10天后停用；每月重复。</li>
+<li>Imúne — 每日2粒胶囊。</li>
+<li>GLP THREE — ¾滴管（0.83毫升）舌下，正餐前30分钟。</li>
+<li>Kynetik — 1包入8–10盎司冷水；每日≤2份；咖啡因敏感者避免深夜。</li>
+</ul>
+<h4>"简单叠加法"每日流程</h4>
+<table>
+<tr><td>时段</td><td>产品</td><td>目的</td></tr>
+<tr><td>早晨</td><td>Vitalité（1软胶囊+4胶囊）、Purifí（1粒）、Éternel（1包）</td><td>营养基础、体内净化支持、抗衰老抗氧化</td></tr>
+<tr><td>上午中段</td><td>Kynetik（1包冲水）</td><td>平稳持续能量与水分</td></tr>
+<tr><td>午/晚餐前30分钟</td><td>GLP THREE（¾滴管）</td><td>降低饥饿感；支持餐前健康血糖代谢</td></tr>
+<tr><td>下午/运动后</td><td>Revíve（2软胶囊）</td><td>支持关节健康；缓解肌肉僵硬</td></tr>
+<tr><td>晚间/睡前</td><td>Imúne（2粒）、Collagène（1包，仅10天周期内）</td><td>夜间免疫支持与细胞焕新</td></tr>
+</table>
+<h4>理想顾客逻辑——从需求出发</h4>
+<p>每日细胞营养基础→Vitalité · 抗衰老/抗氧化→Éternel · 免疫韧性→Imúne · 活跃、关节舒适/恢复→Revíve · 定期全身排毒→Purifí · 由内而外之美→Collagène · 体重管理、减少渴望→GLP THREE · 干净持续能量→Kynetik · 高端神经美肌护肤→Visage。</p>
+<h4>按目标推荐组合</h4>
+<p>全身健康→简单六件套 · 体重管理→GLP THREE（主力）+Purifí（辅助）· 关节与健康炎症平衡→Revíve+Éternel+Collagène · 排毒→Purifí（核心）+Vitalité · 美丽→Collagène（内）+Visage（外）· 能量→Kynetik · 免疫→Imúne。</p>
+<h4>实用贴士</h4>
+<ul><li>胶囊/软胶囊配一整杯水以支持细胞吸收</li><li>帮助顾客维持每日必需品库存</li><li>高强度运动者可运动后立即服用Revíve</li><li>始终附上必要免责声明</li></ul>`
+  },
+  flashcards: [
+    { q: { en: "Vitalité dose?", zh: "Vitalité用量？" }, a: { en: "1 softgel + 4 caps, water, AM, with a meal.", zh: "1软胶囊+4胶囊，配水，早晨随餐。" } },
+    { q: { en: "Collagène cycle?", zh: "Collagène周期？" }, a: { en: "10 days on, stop, repeat monthly.", zh: "10天服停，每月重复。" } },
+    { q: { en: "GLP THREE timing?", zh: "GLP THREE时机？" }, a: { en: "¾ dropper, 30 min before main meal.", zh: "¾滴管，正餐前30分钟。" } },
+    { q: { en: "Kynetik max & caution?", zh: "Kynetik上限与提示？" }, a: { en: "≤2/day; caffeine-sensitive avoid late evening.", zh: "≤2份/日；咖啡因敏感避免深夜。" } },
+    { q: { en: "Morning stack?", zh: "早晨组合？" }, a: { en: "Vitalité + Purifí + Éternel.", zh: "Vitalité+Purifí+Éternel。" } },
+    { q: { en: "Joints goal stack?", zh: "关节目标组合？" }, a: { en: "Revíve + Éternel + Collagène.", zh: "Revíve+Éternel+Collagène。" } }
+  ],
+  quiz: [
+    { q: { en: "1–2 packets any time?", zh: "每日1–2包任意时间？" }, options: { en: ["Purifí","Éternel","Imúne","Kynetik"], zh: ["Purifí","Éternel","Imúne","Kynetik"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Collagène protocol?", zh: "Collagène方案？" }, options: { en: ["daily ongoing","10 on/off monthly","weekly","post-exercise"], zh: ["每天持续","10天服停每月","每周","运动后"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Kynetik mid-morning purpose?", zh: "Kynetik上午中段目的？" }, options: { en: ["hunger","joints","smooth energy & hydration","immune"], zh: ["饥饿","关节","平稳能量与水分","免疫"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Active + joint recovery need?", zh: "活跃+关节恢复需求？" }, options: { en: ["Éternel","Revíve","Collagène","Kynetik"], zh: ["Éternel","Revíve","Collagène","Kynetik"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Capsule tip?", zh: "胶囊贴士？" }, options: { en: ["empty stomach only","full glass of water","with alcohol","no water"], zh: ["仅空腹","一整杯水","配酒","不配水"] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+},
+{
+  id: 16,
+  section: "closing",
+  productKey: null,
+  title: { en: "Compliant Sharing", zh: "合规分享" },
+  hook: { en: "Five approved verbs, zero disease names, and a clear disclaimer — that's the whole compliance toolkit.", zh: "五个合规动词、零疾病名称、一句清晰免责声明——这就是合规工具箱的全部。" },
+  guideHtml: {
+    en: `<h4>The approved verbs (the ONLY health-benefit verbs)</h4><p>Supports · Promotes · Maintains · Assists · Helps maintain.</p>
+<h4>The golden don'ts</h4>
+<ul><li>never claim a product diagnoses/treats/cures/prevents any disease</li><li>never name a disease (e.g. diabetes, cancer, asthma)</li><li>no "cure" words</li><li>no superlatives (miracle, world #1)</li><li>no pork/alcohol imagery (Malaysia)</li></ul>
+<h4>Required disclaimers by market</h4>
+<table>
+<tr><td>Market</td><td>Requirement</td></tr>
+<tr><td>USA (FDA/DSHEA)</td><td>"These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."</td></tr>
+<tr><td>USA (FTC)</td><td>Disclose material connection (#ad or "I earn commission")</td></tr>
+<tr><td>Singapore (HSA/DSAS)</td><td>"Results not typical; individual results vary."</td></tr>
+<tr><td>Malaysia (NPRA/KKLIU)</td><td>Identify as an independent distributor ("Saya pengedar bebas THREE"); product posts also require the KKLIU advertising approval number + MAL registration number (plus halal logo if certified)</td></tr>
+</table>
+<h4>The 3-tier name rule</h4><p>(1) departed/terminated leaders — NEVER named in any asset; (2) active field sharers/guests — role-based anonymity (e.g. "a senior accountant"); (3) corporate officers/scientists (Dr. Dan Gubler) — nameable.</p>
+<h4>Platform golden rules</h4><p>LinkedIn — dwell time is the top signal · Facebook — prioritize interaction, ask questions · Instagram — the 3-second hook is vital · TikTok — trending audio drives reach but must be vetted and used 2–5 days after it peaks · YouTube — watch time/retention drive discovery · RedBook — the save/collect rate is the #1 signal · WhatsApp — highest-leverage duplication channel.</p>`,
+    zh: `<h4>合规动词（唯一可用的健康益处动词）</h4><p>支持 · 促进 · 维持 · 辅助 · 有助于维持。</p>
+<h4>绝对禁止</h4>
+<ul><li>绝不声称产品诊断/治疗/治愈/预防任何疾病</li><li>绝不提及疾病名称（如糖尿病、癌症、哮喘）</li><li>不用"治愈"字眼</li><li>不用夸大词（奇迹、世界第一）</li><li>不用猪肉/酒类意象（马来西亚）</li></ul>
+<h4>各市场必备免责声明</h4>
+<table>
+<tr><td>市场</td><td>要求</td></tr>
+<tr><td>美国（FDA/DSHEA）</td><td>"本声明未经美国食品药品监督管理局评估。本产品不用于诊断、治疗、治愈或预防任何疾病。"</td></tr>
+<tr><td>美国（FTC）</td><td>披露利益关联（#ad 或"我从中获得佣金"）</td></tr>
+<tr><td>新加坡（HSA/DSAS）</td><td>"效果因人而异，非普遍结果。"</td></tr>
+<tr><td>马来西亚（NPRA/KKLIU）</td><td>表明独立经销商身份（"Saya pengedar bebas THREE"）；产品帖文另需KKLIU广告核准编号＋MAL注册编号（如认证另附清真标志）</td></tr>
+</table>
+<h4>三级姓名规则</h4><p>（1）已离职/被终止领导人——任何素材绝不提及姓名；（2）在职一线分享者/嘉宾——角色化匿名（如"一位资深会计师"）；（3）公司高层/科学家（Dr. Dan Gubler）——可具名。</p>
+<h4>平台核心法则</h4><p>LinkedIn—停留时长为首要信号 · Facebook—优先互动、多提问 · Instagram—前3秒吸引力至关重要 · TikTok—热门音乐提升曝光，但须审核并在峰值后2–5天使用 · YouTube—观看时长/留存驱动曝光 · 小红书—收藏率为首要信号 · WhatsApp—杠杆最高的复制渠道。</p>`
+  },
+  flashcards: [
+    { q: { en: "Five approved verbs?", zh: "五个合规动词？" }, a: { en: "Supports, Promotes, Maintains, Assists, Helps maintain.", zh: "支持、促进、维持、辅助、有助于维持。" } },
+    { q: { en: "Never appears with a benefit?", zh: "益处旁绝不出现？" }, a: { en: "a named disease / any diagnose-treat-cure-prevent claim.", zh: "疾病名称/任何诊断-治疗-治愈-预防声称。" } },
+    { q: { en: "USA FDA/DSHEA disclaimer?", zh: "美国FDA/DSHEA免责？" }, a: { en: "\"These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.\"", zh: "\"本声明未经FDA评估。本产品不用于诊断、治疗、治愈或预防任何疾病。\"" } },
+    { q: { en: "Reference an active sharer how?", zh: "如何提及在职分享者？" }, a: { en: "role-based anonymity.", zh: "角色化匿名。" } },
+    { q: { en: "Malaysia product-post extras?", zh: "马来西亚产品帖文另需？" }, a: { en: "KKLIU approval no. + MAL registration no. (+ halal logo if certified).", zh: "KKLIU核准编号＋MAL注册编号（如认证另附清真标志）。" } },
+    { q: { en: "RedBook top signal?", zh: "小红书首要信号？" }, a: { en: "save/collect rate.", zh: "收藏率。" } }
+  ],
+  quiz: [
+    { q: { en: "Approved verb?", zh: "合规动词？" }, options: { en: ["Cures","Treats","Supports","Prevents"], zh: ["治愈","治疗","支持","预防"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "Departed leader in old footage?", zh: "旧影片中已离职领导人？" }, options: { en: ["name with disclaimer","never name in any asset","private chats only","first name only"], zh: ["具名加免责","任何素材绝不具名","仅私聊","仅名字"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Malaysia product post also needs?", zh: "马来西亚产品帖文另需？" }, options: { en: ["nothing","price chart","KKLIU + MAL numbers","celebrity endorsement"], zh: ["无","价格表","KKLIU＋MAL编号","名人代言"] }, answer: 2, rationale: { en: "", zh: "" } },
+    { q: { en: "3-second hook platform?", zh: "3秒吸引力平台？" }, options: { en: ["LinkedIn","Instagram","WhatsApp","YouTube"], zh: ["LinkedIn","Instagram","WhatsApp","YouTube"] }, answer: 1, rationale: { en: "", zh: "" } },
+    { q: { en: "Singapore HSA/DSAS disclaimer?", zh: "新加坡HSA/DSAS免责？" }, options: { en: ["FDA line","\"Results not typical; individual results vary.\"","\"Saya pengedar bebas THREE\"","\"#ad\""], zh: ["FDA句","\"效果因人而异，非普遍结果。\"","\"Saya pengedar bebas THREE\"","\"#ad\""] }, answer: 1, rationale: { en: "", zh: "" } }
+  ]
+}
+];
+
+</script>
+<style>
+  :root{
+    --gold:#C8A14B;
+    --gold-soft:rgba(200,161,75,0.35);
+    --gold-dim:rgba(200,161,75,0.14);
+    --bg:#1C1917;
+    --card:#26221E;
+    --card-2:#2E2A24;
+    --ivory:#F5EFE3;
+    --ivory-dim:#C9C2B2;
+    --danger:#C0563F;
+    --success:#7FA06B;
+    --font-head:'Cinzel', Georgia, 'Times New Roman', serif;
+    --font-ui:'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-body:'Lora', Georgia, 'Times New Roman', serif;
+    --radius:16px;
+    --radius-sm:10px;
+    --safe-top:env(safe-area-inset-top,0px);
+    --safe-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ivory);}
+  body{
+    font-family:var(--font-body);
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    min-height:100dvh;
+    padding-top:var(--safe-top);
+    padding-bottom:var(--safe-bottom);
+  }
+  h1,h2,h3,.heading{font-family:var(--font-head);letter-spacing:0.02em;color:var(--ivory);font-weight:600;}
+  .ui{font-family:var(--font-ui);}
+  a{color:var(--gold);}
+  button{font-family:var(--font-ui);}
+  ::selection{background:var(--gold-soft);color:var(--bg);}
+
+  #app{max-width:720px;margin:0 auto;padding:16px 16px calc(24px + var(--safe-bottom));min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;}
+
+  /* Top bar */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:10px;padding:6px 2px 14px;
+  }
+  .topbar .brandmark{display:flex;align-items:center;gap:10px;}
+  .topbar .brandmark .glyph{
+    width:38px;height:38px;border-radius:10px;
+    background:linear-gradient(160deg,#2E2A24,#1C1917);
+    border:1px solid var(--gold-soft);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-head);color:var(--gold);font-size:20px;flex:none;
+  }
+  .topbar .brandname{font-family:var(--font-head);font-size:15px;line-height:1.2;color:var(--ivory);}
+  .topbar .brandname small{display:block;font-family:var(--font-ui);font-size:10.5px;color:var(--ivory-dim);font-weight:500;letter-spacing:0.03em;margin-top:2px;}
+  .topbar-actions{display:flex;align-items:center;gap:8px;}
+
+  .iconbtn{
+    background:var(--card);border:1px solid var(--gold-soft);color:var(--ivory);
+    border-radius:10px;padding:8px 10px;font-size:13px;cursor:pointer;
+    display:flex;align-items:center;gap:6px;min-height:38px;
+  }
+  .iconbtn:active{background:var(--card-2);}
+
+  .langtoggle{
+    display:flex;background:var(--card);border:1px solid var(--gold-soft);border-radius:10px;overflow:hidden;
+  }
+  .langtoggle button{
+    background:transparent;border:none;color:var(--ivory-dim);padding:8px 12px;font-size:12.5px;font-weight:600;cursor:pointer;min-height:38px;
+  }
+  .langtoggle button.active{background:var(--gold);color:#221C10;}
+
+  /* Cards / sections */
+  .card{
+    background:var(--card);border:1px solid var(--gold-soft);border-radius:var(--radius);
+    padding:16px;margin-bottom:14px;
+  }
+  .hero{
+    text-align:center;padding:22px 16px 20px;margin-bottom:18px;
+    background:radial-gradient(120% 140% at 50% 0%, rgba(200,161,75,0.16), rgba(200,161,75,0) 60%), var(--card);
+    border:1px solid var(--gold-soft);border-radius:var(--radius);
+  }
+  .hero h1{font-size:26px;margin:0 0 6px;}
+  .hero .subtitle{font-family:var(--font-ui);font-size:12.5px;color:var(--gold);letter-spacing:0.05em;text-transform:uppercase;margin-bottom:16px;}
+
+  .progress-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:6px;}
+  .ring{position:relative;width:112px;height:112px;}
+  .ring svg{transform:rotate(-90deg);width:112px;height:112px;}
+  .ring circle{fill:none;stroke-width:9;}
+  .ring .track{stroke:rgba(200,161,75,0.15);}
+  .ring .fill{stroke:var(--gold);stroke-linecap:round;transition:stroke-dashoffset .5s ease;}
+  .ring .label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .ring .label .pct{font-family:var(--font-head);font-size:22px;color:var(--ivory);}
+  .ring .label .cap{font-family:var(--font-ui);font-size:9.5px;color:var(--ivory-dim);letter-spacing:0.04em;text-transform:uppercase;margin-top:2px;}
+
+  .mock-btn{
+    width:100%;margin-top:16px;
+    background:linear-gradient(135deg, var(--gold), #B08B3C);
+    color:#221C10;border:none;border-radius:var(--radius-sm);
+    padding:14px 16px;font-family:var(--font-ui);font-weight:700;font-size:14.5px;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;
+    box-shadow:0 4px 14px rgba(200,161,75,0.25);
+  }
+  .mock-btn:active{transform:translateY(1px);}
+
+  .section-head{
+    font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--gold);margin:22px 4px 10px;display:flex;align-items:center;gap:8px;
+  }
+  .section-head::after{content:"";flex:1;height:1px;background:var(--gold-soft);}
+
+  .module-row{
+    display:flex;align-items:center;gap:12px;
+    background:var(--card);border:1px solid var(--gold-soft);border-radius:var(--radius-sm);
+    padding:13px 14px;margin-bottom:9px;cursor:pointer;text-align:left;width:100%;
+  }
+  .module-row:active{background:var(--card-2);}
+  .module-row .num{
+    font-family:var(--font-head);color:var(--gold);font-size:15px;flex:none;
+    width:30px;height:30px;border-radius:50%;border:1px solid var(--gold-soft);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .module-row .info{flex:1;min-width:0;}
+  .module-row .title{font-family:var(--font-ui);font-weight:600;font-size:14.5px;color:var(--ivory);
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .module-row .status{font-family:var(--font-ui);font-size:11.5px;color:var(--ivory-dim);margin-top:2px;}
+  .module-row .status.passed{color:var(--success);}
+  .module-row .status.studied{color:var(--gold);}
+  .module-row .chev{color:var(--gold);flex:none;font-size:18px;opacity:0.7;}
+
+  /* Module screen */
+  .screen-head{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .backbtn{
+    background:var(--card);border:1px solid var(--gold-soft);color:var(--gold);
+    border-radius:10px;width:40px;height:40px;flex:none;font-size:18px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .screen-title{flex:1;min-width:0;}
+  .screen-title h2{font-size:18px;margin:0;line-height:1.25;}
+  .screen-title .pkey{font-family:var(--font-ui);font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.05em;}
+
+  .hook-card{
+    background:linear-gradient(160deg, var(--gold-dim), rgba(200,161,75,0.02));
+    border:1px solid var(--gold-soft);border-radius:var(--radius);
+    padding:14px 16px;margin-bottom:14px;font-style:italic;color:var(--ivory);font-size:15px;line-height:1.6;
+  }
+
+  .tabs{display:flex;gap:6px;margin-bottom:14px;background:var(--card);border:1px solid var(--gold-soft);border-radius:12px;padding:4px;}
+  .tabs button{
+    flex:1;background:transparent;border:none;color:var(--ivory-dim);padding:10px 6px;font-size:12.5px;font-weight:600;
+    border-radius:9px;cursor:pointer;min-height:40px;
+  }
+  .tabs button.active{background:var(--gold);color:#221C10;}
+
+  .callout{
+    background:rgba(200,161,75,0.1);border:1px solid var(--gold);border-radius:var(--radius-sm);
+    padding:13px 15px;margin-bottom:14px;
+  }
+  .callout .callout-label{font-family:var(--font-ui);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--gold);margin-bottom:6px;}
+  .callout .callout-body{font-size:14.5px;line-height:1.65;}
+
+  .guide-content{font-size:15px;line-height:1.75;color:var(--ivory);}
+  .guide-content h1,.guide-content h2,.guide-content h3{font-family:var(--font-ui);color:var(--gold);font-size:14.5px;text-transform:uppercase;letter-spacing:0.04em;margin:18px 0 8px;}
+  .guide-content h1:first-child,.guide-content h2:first-child,.guide-content h3:first-child{margin-top:0;}
+  .guide-content p{margin:0 0 12px;}
+  .guide-content ul,.guide-content ol{margin:0 0 12px;padding-left:20px;}
+  .guide-content li{margin-bottom:6px;}
+  .guide-content strong{color:var(--gold);}
+  .guide-content table{width:100%;border-collapse:collapse;margin-bottom:14px;font-size:13.5px;}
+  .guide-content th,.guide-content td{border:1px solid var(--gold-soft);padding:7px 9px;text-align:left;}
+  .guide-content th{color:var(--gold);font-family:var(--font-ui);font-size:11.5px;text-transform:uppercase;}
+
+  /* Flashcards */
+  .fc-counter{text-align:center;font-family:var(--font-ui);font-size:12.5px;color:var(--ivory-dim);margin-bottom:10px;}
+  .fc-stage{perspective:1400px;margin-bottom:16px;}
+  .fc-card{
+    min-height:220px;border-radius:var(--radius);border:1px solid var(--gold-soft);
+    background:var(--card);padding:22px;display:flex;align-items:center;justify-content:center;text-align:center;
+    cursor:pointer;position:relative;
+  }
+  .fc-card .fc-tag{
+    position:absolute;top:12px;left:14px;font-family:var(--font-ui);font-size:10px;text-transform:uppercase;
+    letter-spacing:0.06em;color:var(--gold);opacity:0.8;
+  }
+  .fc-card .fc-text{font-size:17px;line-height:1.6;color:var(--ivory);}
+  .fc-card.answer{background:var(--gold-dim);}
+  .fc-card .fc-hint{position:absolute;bottom:10px;right:14px;font-family:var(--font-ui);font-size:10px;color:var(--ivory-dim);}
+  .fc-status-pill{
+    display:inline-block;margin-top:10px;font-family:var(--font-ui);font-size:11px;padding:3px 9px;border-radius:20px;
+  }
+  .fc-status-pill.known{background:rgba(127,160,107,0.18);color:var(--success);}
+  .fc-status-pill.review{background:rgba(192,86,63,0.18);color:var(--danger);}
+
+  .fc-nav{display:flex;gap:8px;margin-bottom:10px;}
+  .fc-nav button{
+    flex:1;background:var(--card);border:1px solid var(--gold-soft);color:var(--ivory);
+    border-radius:var(--radius-sm);padding:11px;font-size:13px;font-weight:600;cursor:pointer;min-height:44px;
+  }
+  .fc-actions{display:flex;gap:8px;}
+  .fc-actions button{
+    flex:1;border-radius:var(--radius-sm);padding:13px;font-size:13.5px;font-weight:700;cursor:pointer;border:1px solid;min-height:46px;
+  }
+  .fc-actions .btn-review{background:rgba(192,86,63,0.12);border-color:rgba(192,86,63,0.5);color:#E39A87;}
+  .fc-actions .btn-known{background:rgba(127,160,107,0.14);border-color:rgba(127,160,107,0.55);color:#A9CB98;}
+
+  /* Quiz */
+  .quiz-q{background:var(--card);border:1px solid var(--gold-soft);border-radius:var(--radius);padding:15px;margin-bottom:14px;}
+  .quiz-q .q-num{font-family:var(--font-ui);font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .quiz-q .q-text{font-size:15px;line-height:1.6;margin-bottom:12px;color:var(--ivory);}
+  .quiz-opt{
+    display:block;width:100%;text-align:left;background:var(--card-2);border:1px solid var(--gold-soft);
+    color:var(--ivory);border-radius:10px;padding:11px 13px;margin-bottom:8px;font-size:14px;cursor:pointer;
+    font-family:var(--font-body);line-height:1.5;
+  }
+  .quiz-opt:active{background:#3A342C;}
+  .quiz-opt.selected{border-color:var(--gold);background:var(--gold-dim);}
+  .quiz-opt.correct{border-color:var(--success);background:rgba(127,160,107,0.18);}
+  .quiz-opt.incorrect{border-color:var(--danger);background:rgba(192,86,63,0.18);}
+  .quiz-opt[disabled]{cursor:default;}
+  .rationale{
+    margin-top:8px;font-size:13.5px;line-height:1.6;color:var(--ivory-dim);
+    background:rgba(200,161,75,0.07);border-left:3px solid var(--gold);padding:9px 12px;border-radius:0 8px 8px 0;
+  }
+  .quiz-submit{
+    width:100%;background:var(--gold);color:#221C10;border:none;border-radius:var(--radius-sm);
+    padding:14px;font-weight:700;font-size:14.5px;cursor:pointer;margin:6px 0 16px;min-height:48px;
+  }
+  .quiz-submit:disabled{opacity:0.45;cursor:not-allowed;}
+  .quiz-score{
+    text-align:center;padding:20px 16px;background:var(--card);border:1px solid var(--gold-soft);border-radius:var(--radius);margin-bottom:14px;
+  }
+  .quiz-score .score-num{font-family:var(--font-head);font-size:34px;color:var(--gold);}
+  .quiz-score .score-label{font-family:var(--font-ui);font-size:12px;color:var(--ivory-dim);margin-top:4px;}
+  .quiz-score .pass-flag{display:inline-block;margin-top:10px;font-family:var(--font-ui);font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;}
+  .quiz-score .pass-flag.pass{background:rgba(127,160,107,0.18);color:var(--success);}
+  .quiz-score .pass-flag.fail{background:rgba(192,86,63,0.18);color:var(--danger);}
+  .retry-btn{
+    width:100%;background:transparent;border:1px solid var(--gold);color:var(--gold);border-radius:var(--radius-sm);
+    padding:13px;font-weight:700;font-size:14px;cursor:pointer;min-height:46px;
+  }
+
+  /* Mock exam */
+  .timer-bar{
+    position:sticky;top:var(--safe-top);z-index:5;display:flex;align-items:center;justify-content:space-between;
+    background:var(--card);border:1px solid var(--gold-soft);border-radius:var(--radius-sm);
+    padding:10px 14px;margin-bottom:14px;font-family:var(--font-ui);
+  }
+  .timer-bar .t-label{font-size:11px;color:var(--ivory-dim);text-transform:uppercase;letter-spacing:0.05em;}
+  .timer-bar .t-val{font-size:18px;color:var(--gold);font-weight:700;}
+  .mock-progress{font-size:12px;color:var(--ivory-dim);}
+
+  .empty-state{text-align:center;padding:40px 20px;color:var(--ivory-dim);font-size:14px;}
+
+  /* Settings modal */
+  .modal-backdrop{
+    position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:50;
+    display:flex;align-items:flex-end;justify-content:center;
+  }
+  .modal-sheet{
+    width:100%;max-width:720px;background:var(--bg);border:1px solid var(--gold-soft);border-radius:20px 20px 0 0;
+    padding:20px 18px calc(20px + var(--safe-bottom));max-height:85vh;overflow-y:auto;
+  }
+  .modal-sheet h3{margin:0 0 14px;font-size:17px;}
+  .modal-row{margin-bottom:12px;}
+  .modal-btn{
+    width:100%;background:var(--card);border:1px solid var(--gold-soft);color:var(--ivory);
+    border-radius:var(--radius-sm);padding:13px;font-size:14px;font-weight:600;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;margin-bottom:10px;
+  }
+  .modal-btn.danger{border-color:rgba(192,86,63,0.5);color:#E39A87;}
+  .modal-btn.primary{background:var(--gold);color:#221C10;border:none;}
+  .modal-close{
+    position:absolute;top:14px;right:14px;background:var(--card);border:1px solid var(--gold-soft);
+    color:var(--ivory);width:34px;height:34px;border-radius:50%;font-size:16px;cursor:pointer;
+  }
+  .modal-sheet{position:relative;}
+  .mock-history{font-size:13px;color:var(--ivory-dim);line-height:1.9;}
+  .mock-history .hrow{display:flex;justify-content:space-between;border-bottom:1px solid rgba(200,161,75,0.12);padding:6px 0;}
+
+  /* Footer */
+  .footer{margin-top:auto;padding-top:26px;text-align:center;}
+  .footer .tagline{font-family:var(--font-head);font-size:13px;color:var(--gold);letter-spacing:0.03em;}
+  .footer .creed{font-family:var(--font-ui);font-size:10px;color:var(--ivory-dim);margin-top:6px;letter-spacing:0.02em;}
+
+  .toast{
+    position:fixed;bottom:calc(20px + var(--safe-bottom));left:50%;transform:translateX(-50%);
+    background:var(--card);border:1px solid var(--gold);color:var(--ivory);padding:11px 18px;
+    border-radius:30px;font-family:var(--font-ui);font-size:13px;z-index:100;box-shadow:0 6px 20px rgba(0,0,0,0.4);
+    max-width:88%;text-align:center;
+  }
+
+  input[type=file]{display:none;}
+
+  @media (max-width:380px){
+    .hero h1{font-size:22px;}
+    .ring{width:96px;height:96px;}
+    .ring svg{width:96px;height:96px;}
+  }
+
+  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+if(!window.THREE_MODULES){window.THREE_MODULES=[
+  {
+    id:"m01",
+    section:"foundation",
+    productKey:"foundation",
+    title:{en:"Welcome to THREE", zh:"欢迎来到 THREE"},
+    hook:{en:"Before you sell a single product, understand the soul behind the system.", zh:"在你销售任何产品之前，先理解这套系统背后的灵魂。"},
+    guideHtml:{
+      en:"<h3>Why THREE Exists</h3><p>THREE was built to combine <strong>science-grounded formulation</strong> with a business system that builds people, not just sales. This is a sample module — real content is injected separately.</p><ul><li>Soul + System = Success</li><li>Every product ties back to a wellness pillar</li><li>Approved language keeps every claim compliant</li></ul>",
+      zh:"<h3>THREE 为何存在</h3><p>THREE 的创立是为了将<strong>有科学依据的配方</strong>与一套能够培养人才而不仅仅是销售的商业系统相结合。这是一个示例模块 — 真实内容将单独注入。</p><ul><li>灵魂 + 系统 = 成功</li><li>每一款产品都对应一个健康支柱</li><li>规范用语确保每一项宣称都合规</li></ul>"
+    },
+    visageIntro:{en:"Sample callout: this box highlights a special product introduction when present.", zh:"示例提示框：当存在时，此框会高亮显示特别的产品介绍内容。"},
+    flashcards:[
+      {q:{en:"What is the locked tagline of Light Warriors Academy?", zh:"光之勇士学院的固定标语是什么？"}, a:{en:"Soul + System = Success", zh:"灵魂 + 系统 = 成功"}},
+      {q:{en:"What does THREE combine to build people?", zh:"THREE 结合了什么来培养人才？"}, a:{en:"Science-grounded formulation with a people-building business system.", zh:"有科学依据的配方与培养人才的商业系统。"}}
+    ],
+    quiz:[
+      {
+        q:{en:"What is the core equation behind Light Warriors Academy?", zh:"光之勇士学院背后的核心公式是什么？"},
+        options:{
+          en:["Soul + System = Success","Hype + Hustle = Sales","Price + Promotion = Growth","Speed + Volume = Success"],
+          zh:["灵魂 + 系统 = 成功","炒作 + 拼搏 = 销售","价格 + 促销 = 增长","速度 + 数量 = 成功"]
+        },
+        answer:0,
+        rationale:{en:"This is the locked tagline that anchors every module in the academy.", zh:"这是贯穿整个学院所有模块的固定标语。"}
+      }
+    ]
+  }
+]}
+</script>
+
+<script>
+(function(){
+  "use strict";
+
+  var LS_PREFIX = "threeMastery_";
+  var LS = {
+    LANG: LS_PREFIX+"lang",
+    QUIZ: LS_PREFIX+"quizProgress",
+    FLASH: LS_PREFIX+"flashProgress",
+    MOCK: LS_PREFIX+"mockHistory"
+  };
+
+  /* ---------- storage helpers (quota-guarded) ---------- */
+  function lsGet(key, fallback){
+    try{
+      var raw = localStorage.getItem(key);
+      if(raw===null || raw===undefined) return fallback;
+      return JSON.parse(raw);
+    }catch(e){ return fallback; }
+  }
+  function lsSet(key, value){
+    try{
+      localStorage.setItem(key, JSON.stringify(value));
+      return true;
+    }catch(e){
+      console.warn("Storage write failed", e);
+      return false;
+    }
+  }
+
+  /* ---------- state ---------- */
+  var state = {
+    lang: lsGet(LS.LANG, "zh"),
+    route: {screen:"home"}, // {screen:'home'} | {screen:'module', id, tab:'study'|'flash'|'quiz'} | {screen:'mock'}
+    settingsOpen: false,
+    modules: (window.THREE_MODULES || []).slice(),
+    mock: null // {questions, answers, startedAt, elapsedTimer, finished}
+  };
+
+  var quizProgress = lsGet(LS.QUIZ, {});   // { [moduleId]: {best:0-100, passed:bool, lastAnswers:[...]} }
+  var flashProgress = lsGet(LS.FLASH, {}); // { [moduleId]: { [cardIdx]: 'known'|'review' } }
+  var mockHistory = lsGet(LS.MOCK, []);    // [{date, score, total, seconds}]
+
+  function saveQuiz(){ lsSet(LS.QUIZ, quizProgress); }
+  function saveFlash(){ lsSet(LS.FLASH, flashProgress); }
+  function saveMock(){ lsSet(LS.MOCK, mockHistory); }
+
+  /* ---------- i18n ---------- */
+  var STR = {
+    zh: {
+      title:"THREE Product Mastery",
+      subtitle:"光之勇士学院",
+      subtitleEn:"Light Warriors Academy",
+      overallProgress:"整体进度",
+      modulesPassed:"已通过模块",
+      mockExam:"模拟测验",
+      startMock:"开始模拟测验 (20题)",
+      foundation:"基础",
+      products:"产品",
+      closing:"收尾",
+      notStarted:"未开始",
+      studied:"已学习",
+      passed:"测验通过 ✓",
+      study:"学习",
+      flashcards:"抽认卡",
+      quiz:"测验",
+      gotIt:"掌握",
+      review:"复习",
+      prev:"上一个",
+      next:"下一个",
+      tapToFlip:"点击翻面",
+      submit:"提交答案",
+      yourScore:"你的成绩",
+      pass:"已通过",
+      fail:"未通过",
+      retry:"重新测验",
+      settings:"设置",
+      exportProgress:"导出进度",
+      importProgress:"导入进度",
+      resetProgress:"重置全部进度",
+      close:"关闭",
+      mockHistory:"模拟测验历史",
+      noHistory:"暂无记录",
+      newMock:"重新开始",
+      finishMock:"提交测验",
+      elapsed:"用时",
+      question:"题",
+      of:"/",
+      backToHome:"返回首页",
+      confirmImport:"导入将覆盖当前进度，确定继续吗？",
+      confirmReset:"这将清除所有学习进度，确定继续吗？",
+      importSuccess:"导入成功",
+      importFail:"文件格式错误，导入失败",
+      exportSuccess:"进度已导出",
+      resetSuccess:"进度已重置",
+      score:"得分",
+      yourAnswer:"你的答案",
+      correctAnswer:"正确答案",
+      rationale:"解析",
+      noModules:"暂无模块数据，请先注入模块内容。",
+      needMoreQuestions:"题库不足，请先添加模块题目。",
+      date:"日期"
+    },
+    en: {
+      title:"THREE Product Mastery",
+      subtitle:"Light Warriors Academy",
+      subtitleEn:"光之勇士学院",
+      overallProgress:"Overall Progress",
+      modulesPassed:"Modules Passed",
+      mockExam:"Mock Exam",
+      startMock:"Start Mock Exam (20 Qs)",
+      foundation:"Foundation",
+      products:"Products",
+      closing:"Closing",
+      notStarted:"Not started",
+      studied:"Studied",
+      passed:"Quiz passed ✓",
+      study:"Study",
+      flashcards:"Flashcards",
+      quiz:"Quiz",
+      gotIt:"Got it",
+      review:"Review",
+      prev:"Prev",
+      next:"Next",
+      tapToFlip:"Tap to flip",
+      submit:"Submit",
+      yourScore:"Your Score",
+      pass:"Passed",
+      fail:"Not Passed",
+      retry:"Retry Quiz",
+      settings:"Settings",
+      exportProgress:"Export Progress",
+      importProgress:"Import Progress",
+      resetProgress:"Reset All Progress",
+      close:"Close",
+      mockHistory:"Mock Exam History",
+      noHistory:"No attempts yet",
+      newMock:"New Mock",
+      finishMock:"Submit Exam",
+      elapsed:"Elapsed",
+      question:"Q",
+      of:"of",
+      backToHome:"Back",
+      confirmImport:"Importing will overwrite current progress. Continue?",
+      confirmReset:"This will erase all study progress. Continue?",
+      importSuccess:"Import successful",
+      importFail:"Invalid file — import failed",
+      exportSuccess:"Progress exported",
+      resetSuccess:"Progress reset",
+      score:"Score",
+      yourAnswer:"Your answer",
+      correctAnswer:"Correct answer",
+      rationale:"Rationale",
+      noModules:"No module data yet. Inject module content to begin.",
+      needMoreQuestions:"Not enough quiz questions available yet.",
+      date:"Date"
+    }
+  };
+  function t(key){ return (STR[state.lang] && STR[state.lang][key]) || key; }
+  function L(obj){
+    if(!obj) return "";
+    return obj[state.lang] || obj.en || obj.zh || "";
+  }
+
+  /* ---------- utils ---------- */
+  function esc(s){
+    return String(s==null?"":s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+  function el(tag, attrs, children){
+    var e = document.createElement(tag);
+    attrs = attrs || {};
+    for(var k in attrs){
+      if(k==="class") e.className = attrs[k];
+      else if(k==="html") e.innerHTML = attrs[k];
+      else if(k.indexOf("on")===0 && typeof attrs[k]==="function") e.addEventListener(k.slice(2), attrs[k]);
+      else if(attrs[k]!==null && attrs[k]!==undefined) e.setAttribute(k, attrs[k]);
+    }
+    (children||[]).forEach(function(c){
+      if(c==null) return;
+      if(typeof c === "string") e.appendChild(document.createTextNode(c));
+      else e.appendChild(c);
+    });
+    return e;
+  }
+  function shuffle(arr){
+    var a = arr.slice();
+    for(var i=a.length-1;i>0;i--){
+      var j = Math.floor(Math.random()*(i+1));
+      var tmp=a[i]; a[i]=a[j]; a[j]=tmp;
+    }
+    return a;
+  }
+  function fmtTime(sec){
+    var m = Math.floor(sec/60), s = sec%60;
+    return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;
+  }
+  function pad2(n){ return (n<10?"0":"")+n; }
+  function todayStr(){
+    var d = new Date();
+    return d.getFullYear()+"-"+pad2(d.getMonth()+1)+"-"+pad2(d.getDate());
+  }
+
+  var toastTimer = null;
+  function showToast(msg){
+    var existing = document.querySelector(".toast");
+    if(existing) existing.remove();
+    var toast = el("div", {class:"toast"}, [msg]);
+    document.body.appendChild(toast);
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.remove(); }, 2600);
+  }
+
+  /* ---------- module helpers ---------- */
+  function getModule(id){
+    for(var i=0;i<state.modules.length;i++){
+      if(state.modules[i].id === id) return state.modules[i];
+    }
+    return null;
+  }
+  function moduleStatus(mod){
+    var qp = quizProgress[mod.id];
+    if(qp && qp.passed) return "passed";
+    var fp = flashProgress[mod.id];
+    var hasFlashActivity = fp && Object.keys(fp).length>0;
+    var hasQuizAttempt = qp && typeof qp.best === "number";
+    if(hasFlashActivity || hasQuizAttempt) return "studied";
+    return "notStarted";
+  }
+  function overallProgressPct(){
+    if(!state.modules.length) return 0;
+    var passedCount = 0;
+    state.modules.forEach(function(m){
+      if(quizProgress[m.id] && quizProgress[m.id].passed) passedCount++;
+    });
+    return Math.round((passedCount/state.modules.length)*100);
+  }
+  function sectionLabel(sec){
+    if(sec==="foundation") return t("foundation");
+    if(sec==="product") return t("products");
+    if(sec==="closing") return t("closing");
+    return sec;
+  }
+  var SECTION_ORDER = ["foundation","product","closing"];
+
+  /* ---------- render root ---------- */
+  function render(){
+    var app = document.getElementById("app");
+    app.innerHTML = "";
+    app.appendChild(renderTopbar());
+
+    var r = state.route;
+    if(r.screen === "home"){
+      app.appendChild(renderHome());
+    } else if(r.screen === "module"){
+      var mod = getModule(r.id);
+      if(!mod){
+        state.route = {screen:"home"};
+        app.appendChild(renderHome());
+      } else {
+        app.appendChild(renderModule(mod, r.tab||"study"));
+      }
+    } else if(r.screen === "mock"){
+      app.appendChild(renderMock());
+    }
+
+    app.appendChild(renderFooter());
+    document.documentElement.lang = state.lang==="zh" ? "zh-CN" : "en";
+
+    if(state.settingsOpen){
+      document.body.appendChild(renderSettingsModal());
+    }
+  }
+
+  /* ---------- topbar ---------- */
+  function renderTopbar(){
+    var top = el("div", {class:"topbar"});
+    var brand = el("div", {class:"brandmark", role:"button", onclick:function(){
+      state.route = {screen:"home"};
+      render();
+    }}, [
+      el("div", {class:"glyph"}, ["III"]),
+      el("div", {class:"brandname"}, [
+        "THREE Mastery",
+        el("small",{},[t("subtitle")])
+      ])
+    ]);
+    brand.style.cursor = "pointer";
+
+    var actions = el("div", {class:"topbar-actions"}, [
+      renderLangToggle(),
+      el("button", {class:"iconbtn", "aria-label":t("settings"), onclick:function(){
+        state.settingsOpen = true; render();
+      }}, ["⚙️"])
+    ]);
+
+    top.appendChild(brand);
+    top.appendChild(actions);
+    return top;
+  }
+  function renderLangToggle(){
+    var wrap = el("div", {class:"langtoggle"});
+    var zh = el("button", {class: state.lang==="zh" ? "active":"" , onclick:function(){
+      state.lang = "zh"; lsSet(LS.LANG, "zh"); render();
+    }}, ["中文"]);
+    var en = el("button", {class: state.lang==="en" ? "active":"", onclick:function(){
+      state.lang = "en"; lsSet(LS.LANG, "en"); render();
+    }}, ["EN"]);
+    wrap.appendChild(zh);
+    wrap.appendChild(en);
+    return wrap;
+  }
+
+  /* ---------- home ---------- */
+  function renderHome(){
+    var frag = document.createDocumentFragment ? el("div",{}) : el("div",{});
+    var wrap = el("div", {});
+
+    var pct = overallProgressPct();
+    var passedCount = state.modules.filter(function(m){ return quizProgress[m.id] && quizProgress[m.id].passed; }).length;
+
+    var R = 48, C = 2*Math.PI*R;
+    var offset = C - (pct/100)*C;
+
+    var hero = el("div", {class:"hero"}, [
+      el("h1", {}, [t("title")]),
+      el("div", {class:"subtitle"}, [t("subtitle") + " / " + t("subtitleEn")]),
+      el("div", {class:"progress-wrap"}, [
+        el("div", {class:"ring"}, [
+          (function(){
+            var svgNS = "http://www.w3.org/2000/svg";
+            var svg = document.createElementNS(svgNS, "svg");
+            svg.setAttribute("viewBox","0 0 112 112");
+            var track = document.createElementNS(svgNS,"circle");
+            track.setAttribute("class","track");
+            track.setAttribute("cx","56"); track.setAttribute("cy","56"); track.setAttribute("r",R);
+            var fill = document.createElementNS(svgNS,"circle");
+            fill.setAttribute("class","fill");
+            fill.setAttribute("cx","56"); fill.setAttribute("cy","56"); fill.setAttribute("r",R);
+            fill.setAttribute("stroke-dasharray", C.toFixed(1));
+            fill.setAttribute("stroke-dashoffset", offset.toFixed(1));
+            svg.appendChild(track); svg.appendChild(fill);
+            return svg;
+          })(),
+          el("div", {class:"label"}, [
+            el("div", {class:"pct"}, [pct+"%"]),
+            el("div", {class:"cap"}, [t("overallProgress")])
+          ])
+        ]),
+        el("div", {class:"ui", style:"font-size:12px;color:var(--ivory-dim)"}, [
+          passedCount + " / " + state.modules.length + " " + t("modulesPassed")
+        ])
+      ]),
+      el("button", {class:"mock-btn", onclick:function(){
+        startMock();
+      }}, ["🏆 " + t("startMock")])
+    ]);
+    wrap.appendChild(hero);
+
+    if(!state.modules.length){
+      wrap.appendChild(el("div", {class:"empty-state"}, [t("noModules")]));
+      return wrap;
+    }
+
+    SECTION_ORDER.forEach(function(sec){
+      var mods = state.modules.filter(function(m){ return m.section === sec; });
+      if(!mods.length) return;
+      wrap.appendChild(el("div", {class:"section-head"}, [sectionLabel(sec)]));
+      mods.forEach(function(mod, idx){
+        wrap.appendChild(renderModuleRow(mod, idx+1));
+      });
+    });
+
+    return wrap;
+  }
+
+  function renderModuleRow(mod, displayNum){
+    var status = moduleStatus(mod);
+    var statusLabel = status==="passed" ? t("passed") : (status==="studied" ? t("studied") : t("notStarted"));
+    var statusClass = status==="passed" ? "passed" : (status==="studied" ? "studied" : "");
+    var row = el("button", {class:"module-row", onclick:function(){
+      state.route = {screen:"module", id:mod.id, tab:"study"};
+      render();
+      window.scrollTo(0,0);
+    }}, [
+      el("div", {class:"num"}, [String(displayNum)]),
+      el("div", {class:"info"}, [
+        el("div", {class:"title"}, [L(mod.title)]),
+        el("div", {class:"status "+statusClass}, [statusLabel])
+      ]),
+      el("div", {class:"chev"}, ["›"])
+    ]);
+    return row;
+  }
+
+  /* ---------- module screen ---------- */
+  function renderModule(mod, activeTab){
+    var wrap = el("div", {});
+
+    wrap.appendChild(el("div", {class:"screen-head"}, [
+      el("button", {class:"backbtn", "aria-label":t("backToHome"), onclick:function(){
+        state.route = {screen:"home"}; render(); window.scrollTo(0,0);
+      }}, ["‹"]),
+      el("div", {class:"screen-title"}, [
+        el("h2", {}, [L(mod.title)])
+      ])
+    ]));
+
+    wrap.appendChild(el("div", {class:"hook-card"}, [L(mod.hook)]));
+
+    var tabs = el("div", {class:"tabs"}, [
+      el("button", {class: activeTab==="study"?"active":"", onclick:function(){
+        state.route = {screen:"module", id:mod.id, tab:"study"}; render();
+      }}, [t("study")]),
+      el("button", {class: activeTab==="flash"?"active":"", onclick:function(){
+        state.route = {screen:"module", id:mod.id, tab:"flash"}; render();
+      }}, [t("flashcards")]),
+      el("button", {class: activeTab==="quiz"?"active":"", onclick:function(){
+        state.route = {screen:"module", id:mod.id, tab:"quiz"}; render();
+      }}, [t("quiz")])
+    ]);
+    wrap.appendChild(tabs);
+
+    if(activeTab === "study"){
+      wrap.appendChild(renderStudyTab(mod));
+    } else if(activeTab === "flash"){
+      wrap.appendChild(renderFlashTab(mod));
+    } else {
+      wrap.appendChild(renderQuizTab(mod));
+    }
+
+    return wrap;
+  }
+
+  function renderStudyTab(mod){
+    var wrap = el("div", {});
+    if(mod.visageIntro){
+      wrap.appendChild(el("div", {class:"callout"}, [
+        el("div", {class:"callout-label"}, ["✨ " + (state.lang==="zh"?"特别介绍":"Special Intro")]),
+        el("div", {class:"callout-body"}, [L(mod.visageIntro)])
+      ]));
+    }
+    wrap.appendChild(el("div", {class:"card"}, [
+      el("div", {class:"guide-content", html: L(mod.guideHtml) || ""})
+    ]));
+    return wrap;
+  }
+
+  /* ---------- flashcards ---------- */
+  var flashState = {}; // per moduleId: {idx, flipped}
+  function getFlashState(modId, total){
+    if(!flashState[modId]) flashState[modId] = {idx:0, flipped:false};
+    if(flashState[modId].idx >= total) flashState[modId].idx = 0;
+    return flashState[modId];
+  }
+
+  function renderFlashTab(mod){
+    var cards = mod.flashcards || [];
+    var wrap = el("div", {});
+    if(!cards.length){
+      wrap.appendChild(el("div", {class:"empty-state"}, [t("noModules")]));
+      return wrap;
+    }
+    var fs = getFlashState(mod.id, cards.length);
+    var card = cards[fs.idx];
+    var savedStatus = (flashProgress[mod.id] || {})[fs.idx];
+
+    wrap.appendChild(el("div", {class:"fc-counter"}, [(fs.idx+1) + " / " + cards.length]));
+
+    var stage = el("div", {class:"fc-stage"});
+    var faceObj = fs.flipped ? card.a : card.q;
+    var cardEl = el("div", {class:"fc-card" + (fs.flipped?" answer":""), onclick:function(){
+      fs.flipped = !fs.flipped;
+      render();
+    }}, [
+      el("div", {class:"fc-tag"}, [fs.flipped ? (state.lang==="zh"?"答案":"Answer") : (state.lang==="zh"?"问题":"Question")]),
+      el("div", {class:"fc-text"}, [L(faceObj)]),
+      el("div", {class:"fc-hint"}, [t("tapToFlip")])
+    ]);
+    stage.appendChild(cardEl);
+    wrap.appendChild(stage);
+
+    if(savedStatus){
+      wrap.appendChild(el("div", {style:"text-align:center;margin-bottom:12px;"}, [
+        el("span", {class:"fc-status-pill " + savedStatus}, [
+          savedStatus==="known" ? ("✓ " + t("gotIt")) : ("↻ " + t("review"))
+        ])
+      ]));
+    }
+
+    wrap.appendChild(el("div", {class:"fc-nav"}, [
+      el("button", {onclick:function(){
+        fs.idx = (fs.idx - 1 + cards.length) % cards.length;
+        fs.flipped = false;
+        render();
+      }}, ["‹ " + t("prev")]),
+      el("button", {onclick:function(){
+        fs.idx = (fs.idx + 1) % cards.length;
+        fs.flipped = false;
+        render();
+      }}, [t("next") + " ›"])
+    ]));
+
+    wrap.appendChild(el("div", {class:"fc-actions"}, [
+      el("button", {class:"btn-review", onclick:function(){
+        setFlashStatus(mod.id, fs.idx, "review");
+      }}, ["↻ " + t("review")]),
+      el("button", {class:"btn-known", onclick:function(){
+        setFlashStatus(mod.id, fs.idx, "known");
+      }}, ["✓ " + t("gotIt")])
+    ]));
+
+    return wrap;
+  }
+
+  function setFlashStatus(modId, idx, status){
+    if(!flashProgress[modId]) flashProgress[modId] = {};
+    flashProgress[modId][idx] = status;
+    saveFlash();
+    var cards = (getModule(modId).flashcards||[]);
+    var fs = getFlashState(modId, cards.length);
+    if(cards.length>1){
+      fs.idx = (fs.idx + 1) % cards.length;
+      fs.flipped = false;
+    }
+    render();
+  }
+
+  /* ---------- quiz (module) ---------- */
+  var quizSession = {}; // per moduleId: {answers:[idx or null], submitted:bool}
+  function getQuizSession(modId, total){
+    if(!quizSession[modId] || quizSession[modId].total !== total){
+      quizSession[modId] = {answers: new Array(total).fill(null), submitted:false, total:total};
+    }
+    return quizSession[modId];
+  }
+
+  function renderQuizTab(mod){
+    var questions = mod.quiz || [];
+    var wrap = el("div", {});
+    if(!questions.length){
+      wrap.appendChild(el("div", {class:"empty-state"}, [t("noModules")]));
+      return wrap;
+    }
+    var sess = getQuizSession(mod.id, questions.length);
+
+    if(sess.submitted){
+      var correctCount = 0;
+      questions.forEach(function(q, i){ if(sess.answers[i] === q.answer) correctCount++; });
+      var pct = Math.round((correctCount/questions.length)*100);
+      var passedNow = pct >= 80;
+
+      wrap.appendChild(el("div", {class:"quiz-score"}, [
+        el("div", {class:"score-num"}, [correctCount + "/" + questions.length]),
+        el("div", {class:"score-label"}, [t("yourScore") + " · " + pct + "%"]),
+        el("div", {class:"pass-flag " + (passedNow?"pass":"fail")}, [passedNow ? t("pass") : t("fail")])
+      ]));
+
+      questions.forEach(function(q, i){
+        wrap.appendChild(renderQuizQuestion(q, i, sess, true));
+      });
+
+      wrap.appendChild(el("button", {class:"retry-btn", onclick:function(){
+        quizSession[mod.id] = {answers:new Array(questions.length).fill(null), submitted:false, total:questions.length};
+        render();
+      }}, [t("retry")]));
+
+      return wrap;
+    }
+
+    questions.forEach(function(q, i){
+      wrap.appendChild(renderQuizQuestion(q, i, sess, false));
+    });
+
+    var allAnswered = sess.answers.every(function(a){ return a !== null; });
+    wrap.appendChild(el("button", {class:"quiz-submit", disabled: !allAnswered, onclick:function(){
+      if(!allAnswered) return;
+      sess.submitted = true;
+      var correctCount = 0;
+      questions.forEach(function(q, i){ if(sess.answers[i] === q.answer) correctCount++; });
+      var pct = Math.round((correctCount/questions.length)*100);
+      var passedNow = pct >= 80;
+      var prev = quizProgress[mod.id] || {best:0, passed:false};
+      quizProgress[mod.id] = {
+        best: Math.max(prev.best||0, pct),
+        passed: prev.passed || passedNow,
+        lastScore: pct
+      };
+      saveQuiz();
+      render();
+      window.scrollTo(0,0);
+    }}, [t("submit")]));
+
+    return wrap;
+  }
+
+  function renderQuizQuestion(q, i, sess, showResult){
+    var qWrap = el("div", {class:"quiz-q"});
+    qWrap.appendChild(el("div", {class:"q-num"}, [t("question") + " " + (i+1)]));
+    qWrap.appendChild(el("div", {class:"q-text"}, [L(q.q)]));
+
+    var opts = (q.options && q.options[state.lang]) || (q.options && q.options.en) || [];
+    opts.forEach(function(optText, optIdx){
+      var cls = "quiz-opt";
+      var selected = sess.answers[i] === optIdx;
+      if(showResult){
+        if(optIdx === q.answer) cls += " correct";
+        else if(selected && optIdx !== q.answer) cls += " incorrect";
+      } else if(selected){
+        cls += " selected";
+      }
+      var btn = el("button", {class:cls, disabled: showResult ? "disabled" : null, onclick:function(){
+        if(showResult) return;
+        sess.answers[i] = optIdx;
+        render();
+      }}, [optText]);
+      qWrap.appendChild(btn);
+    });
+
+    if(showResult){
+      qWrap.appendChild(el("div", {class:"rationale"}, [L(q.rationale)]));
+    }
+    return qWrap;
+  }
+
+  /* ---------- mock exam ---------- */
+  function collectAllQuestions(){
+    var all = [];
+    state.modules.forEach(function(m){
+      (m.quiz||[]).forEach(function(q){
+        all.push({q:q, moduleId:m.id, moduleTitle:m.title});
+      });
+    });
+    return all;
+  }
+
+  function startMock(){
+    var all = collectAllQuestions();
+    if(!all.length){
+      showToast(t("needMoreQuestions"));
+      return;
+    }
+    var count = Math.min(20, all.length);
+    var picked = shuffle(all).slice(0, count);
+    state.mock = {
+      questions: picked,
+      answers: new Array(picked.length).fill(null),
+      submitted: false,
+      startedAt: Date.now(),
+      elapsedSec: 0
+    };
+    state.route = {screen:"mock"};
+    render();
+    window.scrollTo(0,0);
+    startMockTimer();
+  }
+
+  var mockTimerHandle = null;
+  function startMockTimer(){
+    stopMockTimer();
+    mockTimerHandle = setInterval(function(){
+      if(!state.mock || state.mock.submitted){ stopMockTimer(); return; }
+      state.mock.elapsedSec = Math.floor((Date.now() - state.mock.startedAt)/1000);
+      var timeEl = document.getElementById("mockTimerVal");
+      if(timeEl) timeEl.textContent = fmtTime(state.mock.elapsedSec);
+    }, 1000);
+  }
+  function stopMockTimer(){
+    if(mockTimerHandle){ clearInterval(mockTimerHandle); mockTimerHandle = null; }
+  }
+
+  function renderMock(){
+    var wrap = el("div", {});
+    if(!state.mock){
+      wrap.appendChild(el("div", {class:"empty-state"}, [t("needMoreQuestions")]));
+      return wrap;
+    }
+    var mock = state.mock;
+
+    wrap.appendChild(el("div", {class:"screen-head"}, [
+      el("button", {class:"backbtn", "aria-label":t("backToHome"), onclick:function(){
+        stopMockTimer();
+        state.route = {screen:"home"}; render(); window.scrollTo(0,0);
+      }}, ["‹"]),
+      el("div", {class:"screen-title"}, [
+        el("h2", {}, ["🏆 " + t("mockExam")])
+      ])
+    ]));
+
+    wrap.appendChild(el("div", {class:"timer-bar"}, [
+      el("div", {}, [
+        el("div", {class:"t-label"}, [t("elapsed")]),
+        el("div", {class:"t-val", id:"mockTimerVal"}, [fmtTime(mock.elapsedSec)])
+      ]),
+      el("div", {class:"mock-progress"}, [
+        mock.answers.filter(function(a){return a!==null;}).length + " " + t("of") + " " + mock.questions.length
+      ])
+    ]));
+
+    if(mock.submitted){
+      var correctCount = 0;
+      mock.questions.forEach(function(item, i){ if(mock.answers[i] === item.q.answer) correctCount++; });
+      var pct = Math.round((correctCount/mock.questions.length)*100);
+
+      wrap.appendChild(el("div", {class:"quiz-score"}, [
+        el("div", {class:"score-num"}, [correctCount + "/" + mock.questions.length]),
+        el("div", {class:"score-label"}, [t("yourScore") + " · " + pct + "% · " + t("elapsed") + " " + fmtTime(mock.elapsedSec)])
+      ]));
+
+      mock.questions.forEach(function(item, i){
+        var qCopy = item.q;
+        var pseudoSess = {answers: mock.answers};
+        wrap.appendChild(renderQuizQuestion(qCopy, i, pseudoSess, true));
+      });
+
+      wrap.appendChild(el("button", {class:"retry-btn", onclick:function(){
+        startMock();
+      }}, [t("newMock")]));
+    } else {
+      mock.questions.forEach(function(item, i){
+        wrap.appendChild(renderQuizQuestion(item.q, i, mock, false));
+      });
+
+      var allAnswered = mock.answers.every(function(a){ return a!==null; });
+      wrap.appendChild(el("button", {class:"quiz-submit", disabled: !allAnswered, onclick:function(){
+        if(!allAnswered) return;
+        mock.submitted = true;
+        mock.elapsedSec = Math.floor((Date.now()-mock.startedAt)/1000);
+        stopMockTimer();
+        var correctCount = 0;
+        mock.questions.forEach(function(item, i){ if(mock.answers[i] === item.q.answer) correctCount++; });
+        mockHistory.unshift({
+          date: todayStr(),
+          score: correctCount,
+          total: mock.questions.length,
+          seconds: mock.elapsedSec
+        });
+        mockHistory = mockHistory.slice(0, 10);
+        saveMock();
+        render();
+        window.scrollTo(0,0);
+      }}, [t("finishMock")]));
+    }
+
+    return wrap;
+  }
+
+  /* ---------- settings modal ---------- */
+  function renderSettingsModal(){
+    var backdrop = el("div", {class:"modal-backdrop", onclick:function(e){
+      if(e.target === backdrop){ state.settingsOpen = false; closeModal(); }
+    }});
+    var sheet = el("div", {class:"modal-sheet"});
+    sheet.appendChild(el("button", {class:"modal-close", onclick:function(){
+      state.settingsOpen = false; closeModal();
+    }}, ["×"]));
+    sheet.appendChild(el("h3", {}, ["⚙️ " + t("settings")]));
+
+    sheet.appendChild(el("div", {class:"modal-row"}, [
+      el("button", {class:"modal-btn primary", onclick:exportProgress}, ["⬇ " + t("exportProgress")])
+    ]));
+
+    var fileInput = el("input", {type:"file", accept:"application/json", onchange:function(e){
+      handleImportFile(e.target.files && e.target.files[0]);
+    }});
+    sheet.appendChild(el("div", {class:"modal-row"}, [
+      el("button", {class:"modal-btn", onclick:function(){ fileInput.click(); }}, ["⬆ " + t("importProgress")]),
+      fileInput
+    ]));
+
+    sheet.appendChild(el("div", {class:"modal-row"}, [
+      el("button", {class:"modal-btn danger", onclick:function(){
+        if(confirm(t("confirmReset"))){
+          resetProgress();
+        }
+      }}, ["⚠ " + t("resetProgress")])
+    ]));
+
+    sheet.appendChild(el("h3", {style:"margin-top:20px;font-size:14px;"}, [t("mockHistory")]));
+    if(!mockHistory.length){
+      sheet.appendChild(el("div", {class:"mock-history"}, [t("noHistory")]));
+    } else {
+      var hist = el("div", {class:"mock-history"});
+      mockHistory.forEach(function(h){
+        hist.appendChild(el("div", {class:"hrow"}, [
+          el("span", {}, [h.date]),
+          el("span", {}, [h.score + "/" + h.total + " · " + fmtTime(h.seconds)])
+        ]));
+      });
+      sheet.appendChild(hist);
+    }
+
+    backdrop.appendChild(sheet);
+    return backdrop;
+  }
+  function closeModal(){
+    var backdrop = document.querySelector(".modal-backdrop");
+    if(backdrop) backdrop.remove();
+  }
+
+  function exportProgress(){
+    var payload = {
+      app:"threeMastery",
+      version:1,
+      exportedAt: new Date().toISOString(),
+      lang: state.lang,
+      quizProgress: quizProgress,
+      flashProgress: flashProgress,
+      mockHistory: mockHistory
+    };
+    try{
+      var blob = new Blob([JSON.stringify(payload, null, 2)], {type:"application/json"});
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = "threeMastery_progress_" + todayStr() + ".json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
+      showToast(t("exportSuccess"));
+    }catch(e){
+      console.warn("Export failed", e);
+      showToast(t("importFail"));
+    }
+  }
+
+  function handleImportFile(file){
+    if(!file) return;
+    var reader = new FileReader();
+    reader.onload = function(){
+      try{
+        var data = JSON.parse(reader.result);
+        if(!data || typeof data !== "object") throw new Error("bad json");
+        if(!confirm(t("confirmImport"))) return;
+        if(data.quizProgress && typeof data.quizProgress === "object") quizProgress = data.quizProgress;
+        if(data.flashProgress && typeof data.flashProgress === "object") flashProgress = data.flashProgress;
+        if(Array.isArray(data.mockHistory)) mockHistory = data.mockHistory;
+        if(data.lang === "en" || data.lang === "zh") { state.lang = data.lang; lsSet(LS.LANG, state.lang); }
+        saveQuiz(); saveFlash(); saveMock();
+        showToast(t("importSuccess"));
+        state.settingsOpen = false;
+        closeModal();
+        render();
+      }catch(err){
+        console.warn("Import failed", err);
+        showToast(t("importFail"));
+      }
+    };
+    reader.onerror = function(){ showToast(t("importFail")); };
+    reader.readAsText(file);
+  }
+
+  function resetProgress(){
+    quizProgress = {};
+    flashProgress = {};
+    mockHistory = [];
+    saveQuiz(); saveFlash(); saveMock();
+    flashState = {};
+    quizSession = {};
+    showToast(t("resetSuccess"));
+    state.settingsOpen = false;
+    closeModal();
+    render();
+  }
+
+  /* ---------- footer ---------- */
+  function renderFooter(){
+    return el("div", {class:"footer"}, [
+      el("div", {class:"tagline"}, ["Soul + System = Success"]),
+      el("div", {class:"creed"}, ["Build Businesses · Build People · Build Leaders · Build Legacy · v1.0.0"])
+    ]);
+  }
+
+  /* ---------- init ---------- */
+  document.addEventListener("DOMContentLoaded", function(){
+    render();
+  });
+  if(document.readyState !== "loading"){
+    render();
+  }
+})();
+</script>
+<script>
+window.TPM_VERSION='1.0.0';
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){});});}
+</script>
+</body>
+</html>
