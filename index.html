@@ -909,6 +909,7 @@ window.THREE_MODULES = [
   /* Quiz */
   .quiz-q{background:var(--card);border:1px solid var(--gold-soft);border-radius:var(--radius);padding:15px;margin-bottom:14px;}
   .quiz-q .q-num{font-family:var(--font-ui);font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .quiz-q .q-tag{display:inline-block;font-family:var(--font-ui);font-size:11px;font-weight:600;color:var(--gold);background:rgba(200,161,75,0.12);border:1px solid var(--gold-soft);border-radius:20px;padding:3px 11px;margin-bottom:9px;letter-spacing:0.02em;}
   .quiz-q .q-text{font-size:15px;line-height:1.6;margin-bottom:12px;color:var(--ivory);}
   .quiz-opt{
     display:block;width:100%;text-align:left;background:var(--card-2);border:1px solid var(--gold-soft);
@@ -1656,8 +1657,11 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
     return wrap;
   }
 
-  function renderQuizQuestion(q, i, sess, showResult){
+  function renderQuizQuestion(q, i, sess, showResult, tagTitle){
     var qWrap = el("div", {class:"quiz-q"});
+    if(tagTitle){
+      qWrap.appendChild(el("div", {class:"q-tag"}, ["📘 " + L(tagTitle)]));
+    }
     qWrap.appendChild(el("div", {class:"q-num"}, [t("question") + " " + (i+1)]));
     qWrap.appendChild(el("div", {class:"q-text"}, [L(q.q)]));
 
@@ -1772,7 +1776,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
       mock.questions.forEach(function(item, i){
         var qCopy = item.q;
         var pseudoSess = {answers: mock.answers};
-        wrap.appendChild(renderQuizQuestion(qCopy, i, pseudoSess, true));
+        wrap.appendChild(renderQuizQuestion(qCopy, i, pseudoSess, true, item.moduleTitle));
       });
 
       wrap.appendChild(el("button", {class:"retry-btn", onclick:function(){
@@ -1780,7 +1784,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
       }}, [t("newMock")]));
     } else {
       mock.questions.forEach(function(item, i){
-        wrap.appendChild(renderQuizQuestion(item.q, i, mock, false));
+        wrap.appendChild(renderQuizQuestion(item.q, i, mock, false, item.moduleTitle));
       });
 
       var answeredCount = mock.answers.filter(function(a){ return a!==null; }).length;
@@ -1964,7 +1968,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
   function renderFooter(){
     return el("div", {class:"footer"}, [
       el("div", {class:"tagline"}, ["Soul + System = Success"]),
-      el("div", {class:"creed"}, ["Build Businesses · Build People · Build Leaders · Build Legacy · v1.1.1"])
+      el("div", {class:"creed"}, ["Build Businesses · Build People · Build Leaders · Build Legacy · v1.1.2"])
     ]);
   }
 
@@ -1978,7 +1982,7 @@ if(!window.THREE_MODULES){window.THREE_MODULES=[
 })();
 </script>
 <script>
-window.TPM_VERSION='1.1.1';
+window.TPM_VERSION='1.1.2';
 if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){});});}
 </script>
 </body>
